@@ -1,0 +1,19 @@
+# Local environments and caches
+.cache/
+.uv-cache/
+.uv-python/
+Flow-JEPA/.venv/
+Flow-JEPA/__pycache__/
+
+# Large local datasets and checkpoints
+stable-wm/
+
+# macOS/editor noise
+.DS_Store
+.vscode/
+.idea/
+
+# Python noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
