@@ -2,12 +2,16 @@
 
 This folder keeps our Flow-JEPA work organized around the upstream implementation:
 
-- `Flow-JEPA/`: cloned source from <https://github.com/HuoYanchen/Flow-JEPA>
+- `Flow-JEPA/`: vendored source from <https://github.com/HuoYanchen/Flow-JEPA>
 - `Papers/`: local papers and notes
 - `stable-wm/`: local datasets, checkpoints, and run artifacts
 - `.uv-cache/`: project-local `uv` cache
 - `.uv-python/`: project-local Python versions installed by `uv`
 - `.cache/`: project-local runtime caches for Matplotlib, fontconfig, and Hugging Face
+
+The vendored `Flow-JEPA/` source started from upstream commit
+`ab73e7c50435e3a1fffb4d3f6d175445e57a2f4e`. It is tracked directly in this
+repository so we can modify it freely for our experiments.
 
 ## Environment
 
