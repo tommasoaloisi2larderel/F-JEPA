@@ -1,0 +1,24 @@
+Étape 1 : vecteurs déjà calculés, relus depuis /workspace/stable-wm/cache/pusht_lewm_emb.pt
+torch.compile : 44.2 ms par pas sans, 20.1 ms avec -> activé
+joint_det-pusht-s0 : modèle joint_det, pusht, graine 0 | 1 794 871 exemples (1 615 384 train, 179 487 val), 12 620 pas par epoch, 20 epochs
+epoch  1/20 | perte train 0.1543 | perte val 0.0492 | lr 5.0e-05 | 7.2 min | reste ~137 min
+epoch  2/20 | perte train 0.0398 | perte val 0.0341 | lr 4.9e-05 | 7.2 min | reste ~130 min
+epoch  3/20 | perte train 0.0298 | perte val 0.0278 | lr 4.8e-05 | 7.3 min | reste ~123 min
+epoch  4/20 | perte train 0.0248 | perte val 0.0238 | lr 4.6e-05 | 7.4 min | reste ~116 min
+epoch  5/20 | perte train 0.0215 | perte val 0.0204 | lr 4.3e-05 | 7.3 min | reste ~109 min
+epoch  6/20 | perte train 0.0192 | perte val 0.0183 | lr 4.0e-05 | 7.3 min | reste ~102 min
+epoch  7/20 | perte train 0.0173 | perte val 0.0169 | lr 3.7e-05 | 7.0 min | reste ~94 min
+epoch  8/20 | perte train 0.0157 | perte val 0.0161 | lr 3.3e-05 | 7.3 min | reste ~87 min
+epoch  9/20 | perte train 0.0143 | perte val 0.0145 | lr 2.9e-05 | 6.6 min | reste ~79 min
+epoch 10/20 | perte train 0.0132 | perte val 0.0135 | lr 2.5e-05 | 6.5 min | reste ~71 min
+epoch 11/20 | perte train 0.0121 | perte val 0.0130 | lr 2.1e-05 | 6.8 min | reste ~64 min
+epoch 12/20 | perte train 0.0112 | perte val 0.0116 | lr 1.8e-05 | 6.9 min | reste ~57 min
+epoch 13/20 | perte train 0.0104 | perte val 0.0112 | lr 1.4e-05 | 6.8 min | reste ~49 min
+epoch 14/20 | perte train 0.0096 | perte val 0.0102 | lr 1.0e-05 | 6.7 min | reste ~42 min
+epoch 15/20 | perte train 0.0090 | perte val 0.0098 | lr 7.5e-06 | 6.8 min | reste ~35 min
+epoch 16/20 | perte train 0.0085 | perte val 0.0092 | lr 4.9e-06 | 6.9 min | reste ~28 min
+epoch 17/20 | perte train 0.0081 | perte val 0.0090 | lr 2.8e-06 | 6.9 min | reste ~21 min
+epoch 18/20 | perte train 0.0078 | perte val 0.0088 | lr 1.2e-06 | 7.3 min | reste ~14 min
+epoch 19/20 | perte train 0.0076 | perte val 0.0087 | lr 3.1e-07 | 7.2 min | reste ~7 min
+epoch 20/20 | perte train 0.0075 | perte val 0.0087 | lr 0.0e+00 | 7.2 min | reste ~0 min
+Terminé en 141 min. Poids : /workspace/stable-wm/checkpoints/joint_det-pusht-s0

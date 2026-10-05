@@ -1,0 +1,2 @@
+démarré le 2026-10-02 16:31 UTC, 20 epochs, 6 entraînements sur 3 GPU
+terminé le 2026-10-02 19:33 UTC

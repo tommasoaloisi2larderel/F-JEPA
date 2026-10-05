@@ -1,0 +1,49 @@
+{
+  "_target_": "variants.VariantJEPA",
+  "num_flow_steps": 8,
+  "flow_source": "noisy_current",
+  "flow_source_noise_scale": 0.5,
+  "freeze_encoder": true,
+  "freeze_projector": true,
+  "encoder": {
+    "_target_": "stable_pretraining.backbone.utils.vit_hf",
+    "size": "tiny",
+    "patch_size": 14,
+    "image_size": 224,
+    "pretrained": false,
+    "use_mask_token": false
+  },
+  "predictor": {
+    "_target_": "module.FlowTrajectoryPredictor",
+    "input_dim": 192,
+    "hidden_dim": 192,
+    "action_dim": 192,
+    "output_dim": 192,
+    "output_proj_hidden_dim": 768,
+    "causal_self_attention": true,
+    "depth": 6,
+    "heads": 16,
+    "mlp_dim": 2048,
+    "dim_head": 64,
+    "dropout": 0.0,
+    "emb_dropout": 0.0
+  },
+  "action_encoder": {
+    "_target_": "module.Embedder",
+    "input_dim": 10,
+    "emb_dim": 192
+  },
+  "projector": {
+    "_target_": "module.MLP",
+    "input_dim": 192,
+    "output_dim": 192,
+    "hidden_dim": 2048,
+    "norm_fn": {
+      "_target_": "torch.nn.BatchNorm1d",
+      "_partial_": true
+    }
+  },
+  "pred_proj": null,
+  "joint": false,
+  "flow": true
+}

@@ -1,0 +1,187 @@
+[1/3] chargement : 1 843 exemples/s avec 16 processus
+[2/3] pas d'entraînement : 424 ms (302 exemples/s), mémoire GPU 19.9 Go
+[3/3] avec torch.compile : 163 ms par pas (compilation : 74 s)
+Temps prévu : 4.1 h pour 20 epochs (4 435 pas par epoch). Frein : le GPU.
+torch.compile : oui (choix enregistré dans benchmark.json)
+630 809 exemples (567 729 train, 8 192 val suivis), 4 435 pas par epoch, 20 epochs, 16 processus de chargement, torch.compile : oui
+  epoch 1 pas 500/4 435 | perte 3.3151 (flow 1.3516, sigreg 19.6308) | 610 ex/s | attente des données 3%
+  epoch 1 pas 1 000/4 435 | perte 2.4643 (flow 1.1988, sigreg 12.6536) | 670 ex/s | attente des données 2%
+  epoch 1 pas 1 500/4 435 | perte 2.0658 (flow 1.0570, sigreg 10.0871) | 693 ex/s | attente des données 1%
+  epoch 1 pas 2 000/4 435 | perte 1.8206 (flow 0.9432, sigreg 8.7733) | 704 ex/s | attente des données 1%
+  epoch 1 pas 2 500/4 435 | perte 1.6537 (flow 0.8576, sigreg 7.9598) | 711 ex/s | attente des données 1%
+  epoch 1 pas 3 000/4 435 | perte 1.5327 (flow 0.7927, sigreg 7.3996) | 716 ex/s | attente des données 1%
+  epoch 1 pas 3 500/4 435 | perte 1.4409 (flow 0.7413, sigreg 6.9949) | 720 ex/s | attente des données 1%
+  epoch 1 pas 4 000/4 435 | perte 1.3682 (flow 0.6991, sigreg 6.6908) | 722 ex/s | attente des données 1%
+epoch  1/20 | train : perte 1.3161 (flow 0.6679, sigreg 6.4817) | val : perte 31.6196 (flow 1.6001, sigreg 300.1875) | lr 5.0e-05 | 13.3 min | reste ~4.2 h
+  epoch 2 pas 500/4 435 | perte 0.8171 (flow 0.3632, sigreg 4.5396) | 722 ex/s | attente des données 3%
+  epoch 2 pas 1 000/4 435 | perte 0.8080 (flow 0.3543, sigreg 4.5374) | 731 ex/s | attente des données 2%
+  epoch 2 pas 1 500/4 435 | perte 0.8003 (flow 0.3470, sigreg 4.5329) | 734 ex/s | attente des données 1%
+  epoch 2 pas 2 000/4 435 | perte 0.7931 (flow 0.3404, sigreg 4.5275) | 736 ex/s | attente des données 1%
+  epoch 2 pas 2 500/4 435 | perte 0.7872 (flow 0.3347, sigreg 4.5254) | 736 ex/s | attente des données 1%
+  epoch 2 pas 3 000/4 435 | perte 0.7818 (flow 0.3295, sigreg 4.5234) | 737 ex/s | attente des données 1%
+  epoch 2 pas 3 500/4 435 | perte 0.7768 (flow 0.3247, sigreg 4.5210) | 737 ex/s | attente des données 1%
+  epoch 2 pas 4 000/4 435 | perte 0.7724 (flow 0.3204, sigreg 4.5199) | 738 ex/s | attente des données 1%
+epoch  2/20 | train : perte 0.7688 (flow 0.3169, sigreg 4.5188) | val : perte 19.3914 (flow 0.8133, sigreg 185.8125) | lr 4.9e-05 | 13.0 min | reste ~3.9 h
+  epoch 3 pas 500/4 435 | perte 0.7304 (flow 0.2782, sigreg 4.5214) | 721 ex/s | attente des données 3%
+  epoch 3 pas 1 000/4 435 | perte 0.7270 (flow 0.2749, sigreg 4.5210) | 726 ex/s | attente des données 2%
+  epoch 3 pas 1 500/4 435 | perte 0.7239 (flow 0.2716, sigreg 4.5224) | 730 ex/s | attente des données 1%
+  epoch 3 pas 2 000/4 435 | perte 0.7215 (flow 0.2689, sigreg 4.5251) | 733 ex/s | attente des données 1%
+  epoch 3 pas 2 500/4 435 | perte 0.7187 (flow 0.2658, sigreg 4.5285) | 734 ex/s | attente des données 1%
+  epoch 3 pas 3 000/4 435 | perte 0.7157 (flow 0.2627, sigreg 4.5305) | 735 ex/s | attente des données 1%
+  epoch 3 pas 3 500/4 435 | perte 0.7132 (flow 0.2600, sigreg 4.5316) | 736 ex/s | attente des données 1%
+  epoch 3 pas 4 000/4 435 | perte 0.7105 (flow 0.2575, sigreg 4.5297) | 735 ex/s | attente des données 1%
+epoch  3/20 | train : perte 0.7084 (flow 0.2555, sigreg 4.5289) | val : perte 4.1387 (flow 0.4199, sigreg 37.1875) | lr 4.8e-05 | 13.0 min | reste ~3.7 h
+  epoch 4 pas 500/4 435 | perte 0.6858 (flow 0.2347, sigreg 4.5108) | 728 ex/s | attente des données 2%
+  epoch 4 pas 1 000/4 435 | perte 0.6847 (flow 0.2338, sigreg 4.5083) | 734 ex/s | attente des données 1%
+  epoch 4 pas 1 500/4 435 | perte 0.6827 (flow 0.2323, sigreg 4.5039) | 736 ex/s | attente des données 1%
+  epoch 4 pas 2 000/4 435 | perte 0.6806 (flow 0.2315, sigreg 4.4906) | 737 ex/s | attente des données 1%
+  epoch 4 pas 2 500/4 435 | perte 0.6792 (flow 0.2310, sigreg 4.4822) | 738 ex/s | attente des données 1%
+  epoch 4 pas 3 000/4 435 | perte 0.6777 (flow 0.2306, sigreg 4.4711) | 737 ex/s | attente des données 0%
+  epoch 4 pas 3 500/4 435 | perte 0.6756 (flow 0.2302, sigreg 4.4545) | 738 ex/s | attente des données 0%
+  epoch 4 pas 4 000/4 435 | perte 0.6736 (flow 0.2298, sigreg 4.4374) | 738 ex/s | attente des données 0%
+epoch  4/20 | train : perte 0.6718 (flow 0.2294, sigreg 4.4243) | val : perte 4.2220 (flow 0.4266, sigreg 37.9531) | lr 4.6e-05 | 13.0 min | reste ~3.5 h
+  epoch 5 pas 500/4 435 | perte 0.6538 (flow 0.2246, sigreg 4.2922) | 723 ex/s | attente des données 3%
+  epoch 5 pas 1 000/4 435 | perte 0.6523 (flow 0.2243, sigreg 4.2811) | 731 ex/s | attente des données 1%
+  epoch 5 pas 1 500/4 435 | perte 0.6512 (flow 0.2238, sigreg 4.2739) | 733 ex/s | attente des données 1%
+  epoch 5 pas 2 000/4 435 | perte 0.6493 (flow 0.2236, sigreg 4.2566) | 735 ex/s | attente des données 1%
+  epoch 5 pas 2 500/4 435 | perte 0.6479 (flow 0.2234, sigreg 4.2449) | 736 ex/s | attente des données 1%
+  epoch 5 pas 3 000/4 435 | perte 0.6462 (flow 0.2232, sigreg 4.2302) | 736 ex/s | attente des données 1%
+  epoch 5 pas 3 500/4 435 | perte 0.6452 (flow 0.2231, sigreg 4.2210) | 737 ex/s | attente des données 1%
+  epoch 5 pas 4 000/4 435 | perte 0.6438 (flow 0.2228, sigreg 4.2100) | 738 ex/s | attente des données 1%
+epoch  5/20 | train : perte 0.6426 (flow 0.2226, sigreg 4.2002) | val : perte 2.5418 (flow 0.3231, sigreg 22.1836) | lr 4.3e-05 | 13.0 min | reste ~3.3 h
+  epoch 6 pas 500/4 435 | perte 0.6288 (flow 0.2190, sigreg 4.0979) | 723 ex/s | attente des données 3%
+  epoch 6 pas 1 000/4 435 | perte 0.6285 (flow 0.2192, sigreg 4.0937) | 731 ex/s | attente des données 1%
+  epoch 6 pas 1 500/4 435 | perte 0.6280 (flow 0.2188, sigreg 4.0928) | 734 ex/s | attente des données 1%
+  epoch 6 pas 2 000/4 435 | perte 0.6272 (flow 0.2185, sigreg 4.0874) | 736 ex/s | attente des données 1%
+  epoch 6 pas 2 500/4 435 | perte 0.6261 (flow 0.2181, sigreg 4.0802) | 737 ex/s | attente des données 1%
+  epoch 6 pas 3 000/4 435 | perte 0.6252 (flow 0.2176, sigreg 4.0768) | 738 ex/s | attente des données 1%
+  epoch 6 pas 3 500/4 435 | perte 0.6245 (flow 0.2173, sigreg 4.0729) | 737 ex/s | attente des données 1%
+  epoch 6 pas 4 000/4 435 | perte 0.6237 (flow 0.2168, sigreg 4.0686) | 738 ex/s | attente des données 0%
+epoch  6/20 | train : perte 0.6231 (flow 0.2165, sigreg 4.0662) | val : perte 1.2643 (flow 0.2177, sigreg 10.4688) | lr 4.0e-05 | 13.0 min | reste ~3.0 h
+  epoch 7 pas 500/4 435 | perte 0.6168 (flow 0.2134, sigreg 4.0346) | 724 ex/s | attente des données 3%
+  epoch 7 pas 1 000/4 435 | perte 0.6155 (flow 0.2127, sigreg 4.0274) | 733 ex/s | attente des données 1%
+  epoch 7 pas 1 500/4 435 | perte 0.6143 (flow 0.2120, sigreg 4.0230) | 735 ex/s | attente des données 1%
+  epoch 7 pas 2 000/4 435 | perte 0.6140 (flow 0.2119, sigreg 4.0210) | 736 ex/s | attente des données 1%
+  epoch 7 pas 2 500/4 435 | perte 0.6136 (flow 0.2115, sigreg 4.0206) | 737 ex/s | attente des données 1%
+  epoch 7 pas 3 000/4 435 | perte 0.6131 (flow 0.2112, sigreg 4.0191) | 737 ex/s | attente des données 1%
+  epoch 7 pas 3 500/4 435 | perte 0.6127 (flow 0.2109, sigreg 4.0180) | 738 ex/s | attente des données 1%
+  epoch 7 pas 4 000/4 435 | perte 0.6121 (flow 0.2105, sigreg 4.0154) | 738 ex/s | attente des données 0%
+epoch  7/20 | train : perte 0.6117 (flow 0.2102, sigreg 4.0142) | val : perte 2.9433 (flow 0.3339, sigreg 26.0977) | lr 3.7e-05 | 13.0 min | reste ~2.8 h
+  epoch 8 pas 500/4 435 | perte 0.6047 (flow 0.2059, sigreg 3.9881) | 717 ex/s | attente des données 3%
+  epoch 8 pas 1 000/4 435 | perte 0.6060 (flow 0.2063, sigreg 3.9965) | 728 ex/s | attente des données 2%
+  epoch 8 pas 1 500/4 435 | perte 0.6059 (flow 0.2062, sigreg 3.9962) | 732 ex/s | attente des données 1%
+  epoch 8 pas 2 000/4 435 | perte 0.6054 (flow 0.2059, sigreg 3.9955) | 734 ex/s | attente des données 1%
+  epoch 8 pas 2 500/4 435 | perte 0.6050 (flow 0.2057, sigreg 3.9924) | 736 ex/s | attente des données 1%
+  epoch 8 pas 3 000/4 435 | perte 0.6043 (flow 0.2054, sigreg 3.9888) | 736 ex/s | attente des données 1%
+  epoch 8 pas 3 500/4 435 | perte 0.6039 (flow 0.2051, sigreg 3.9872) | 737 ex/s | attente des données 1%
+  epoch 8 pas 4 000/4 435 | perte 0.6034 (flow 0.2048, sigreg 3.9865) | 737 ex/s | attente des données 1%
+epoch  8/20 | train : perte 0.6030 (flow 0.2046, sigreg 3.9840) | val : perte 1.2918 (flow 0.2061, sigreg 10.8652) | lr 3.3e-05 | 13.0 min | reste ~2.6 h
+  epoch 9 pas 500/4 435 | perte 0.5994 (flow 0.2020, sigreg 3.9741) | 719 ex/s | attente des données 3%
+  epoch 9 pas 1 000/4 435 | perte 0.5994 (flow 0.2020, sigreg 3.9734) | 730 ex/s | attente des données 2%
+  epoch 9 pas 1 500/4 435 | perte 0.5985 (flow 0.2016, sigreg 3.9684) | 733 ex/s | attente des données 1%
+  epoch 9 pas 2 000/4 435 | perte 0.5985 (flow 0.2017, sigreg 3.9675) | 735 ex/s | attente des données 1%
+  epoch 9 pas 2 500/4 435 | perte 0.5981 (flow 0.2013, sigreg 3.9679) | 735 ex/s | attente des données 1%
+  epoch 9 pas 3 000/4 435 | perte 0.5976 (flow 0.2009, sigreg 3.9673) | 736 ex/s | attente des données 1%
+  epoch 9 pas 3 500/4 435 | perte 0.5972 (flow 0.2006, sigreg 3.9655) | 737 ex/s | attente des données 1%
+  epoch 9 pas 4 000/4 435 | perte 0.5969 (flow 0.2004, sigreg 3.9645) | 737 ex/s | attente des données 1%
+epoch  9/20 | train : perte 0.5967 (flow 0.2003, sigreg 3.9645) | val : perte 1.4394 (flow 0.2361, sigreg 12.0312) | lr 2.9e-05 | 13.0 min | reste ~2.4 h
+  epoch 10 pas 500/4 435 | perte 0.5940 (flow 0.1980, sigreg 3.9601) | 718 ex/s | attente des données 3%
+  epoch 10 pas 1 000/4 435 | perte 0.5944 (flow 0.1983, sigreg 3.9609) | 727 ex/s | attente des données 2%
+  epoch 10 pas 1 500/4 435 | perte 0.5941 (flow 0.1979, sigreg 3.9622) | 731 ex/s | attente des données 1%
+  epoch 10 pas 2 000/4 435 | perte 0.5933 (flow 0.1975, sigreg 3.9579) | 733 ex/s | attente des données 1%
+  epoch 10 pas 2 500/4 435 | perte 0.5932 (flow 0.1974, sigreg 3.9575) | 735 ex/s | attente des données 1%
+  epoch 10 pas 3 000/4 435 | perte 0.5929 (flow 0.1973, sigreg 3.9560) | 736 ex/s | attente des données 1%
+  epoch 10 pas 3 500/4 435 | perte 0.5928 (flow 0.1972, sigreg 3.9559) | 736 ex/s | attente des données 1%
+  epoch 10 pas 4 000/4 435 | perte 0.5924 (flow 0.1970, sigreg 3.9540) | 737 ex/s | attente des données 1%
+epoch 10/20 | train : perte 0.5921 (flow 0.1968, sigreg 3.9526) | val : perte 1.1444 (flow 0.1746, sigreg 9.6973) | lr 2.5e-05 | 13.0 min | reste ~2.2 h
+  epoch 11 pas 500/4 435 | perte 0.5881 (flow 0.1945, sigreg 3.9358) | 722 ex/s | attente des données 3%
+  epoch 11 pas 1 000/4 435 | perte 0.5881 (flow 0.1946, sigreg 3.9346) | 731 ex/s | attente des données 1%
+  epoch 11 pas 1 500/4 435 | perte 0.5879 (flow 0.1944, sigreg 3.9347) | 734 ex/s | attente des données 1%
+  epoch 11 pas 2 000/4 435 | perte 0.5879 (flow 0.1943, sigreg 3.9353) | 736 ex/s | attente des données 1%
+  epoch 11 pas 2 500/4 435 | perte 0.5875 (flow 0.1939, sigreg 3.9359) | 737 ex/s | attente des données 1%
+  epoch 11 pas 3 000/4 435 | perte 0.5873 (flow 0.1937, sigreg 3.9357) | 737 ex/s | attente des données 1%
+  epoch 11 pas 3 500/4 435 | perte 0.5870 (flow 0.1935, sigreg 3.9344) | 737 ex/s | attente des données 1%
+  epoch 11 pas 4 000/4 435 | perte 0.5865 (flow 0.1933, sigreg 3.9323) | 738 ex/s | attente des données 1%
+epoch 11/20 | train : perte 0.5864 (flow 0.1931, sigreg 3.9326) | val : perte 1.1243 (flow 0.1698, sigreg 9.5449) | lr 2.1e-05 | 13.0 min | reste ~2.0 h
+  epoch 12 pas 500/4 435 | perte 0.5842 (flow 0.1911, sigreg 3.9312) | 720 ex/s | attente des données 3%
+  epoch 12 pas 1 000/4 435 | perte 0.5843 (flow 0.1915, sigreg 3.9271) | 730 ex/s | attente des données 2%
+  epoch 12 pas 1 500/4 435 | perte 0.5839 (flow 0.1913, sigreg 3.9261) | 732 ex/s | attente des données 1%
+  epoch 12 pas 2 000/4 435 | perte 0.5834 (flow 0.1911, sigreg 3.9236) | 734 ex/s | attente des données 1%
+  epoch 12 pas 2 500/4 435 | perte 0.5833 (flow 0.1910, sigreg 3.9234) | 735 ex/s | attente des données 1%
+  epoch 12 pas 3 000/4 435 | perte 0.5831 (flow 0.1908, sigreg 3.9234) | 736 ex/s | attente des données 1%
+  epoch 12 pas 3 500/4 435 | perte 0.5829 (flow 0.1906, sigreg 3.9232) | 737 ex/s | attente des données 1%
+  epoch 12 pas 4 000/4 435 | perte 0.5828 (flow 0.1904, sigreg 3.9236) | 737 ex/s | attente des données 1%
+epoch 12/20 | train : perte 0.5827 (flow 0.1904, sigreg 3.9229) | val : perte 0.9912 (flow 0.1605, sigreg 8.3076) | lr 1.8e-05 | 13.0 min | reste ~1.7 h
+  epoch 13 pas 500/4 435 | perte 0.5801 (flow 0.1889, sigreg 3.9129) | 719 ex/s | attente des données 3%
+  epoch 13 pas 1 000/4 435 | perte 0.5802 (flow 0.1888, sigreg 3.9133) | 729 ex/s | attente des données 2%
+  epoch 13 pas 1 500/4 435 | perte 0.5797 (flow 0.1885, sigreg 3.9120) | 733 ex/s | attente des données 1%
+  epoch 13 pas 2 000/4 435 | perte 0.5795 (flow 0.1882, sigreg 3.9131) | 734 ex/s | attente des données 1%
+  epoch 13 pas 2 500/4 435 | perte 0.5791 (flow 0.1879, sigreg 3.9119) | 736 ex/s | attente des données 1%
+  epoch 13 pas 3 000/4 435 | perte 0.5789 (flow 0.1878, sigreg 3.9107) | 736 ex/s | attente des données 1%
+  epoch 13 pas 3 500/4 435 | perte 0.5789 (flow 0.1877, sigreg 3.9116) | 736 ex/s | attente des données 1%
+  epoch 13 pas 4 000/4 435 | perte 0.5787 (flow 0.1876, sigreg 3.9114) | 737 ex/s | attente des données 1%
+epoch 13/20 | train : perte 0.5786 (flow 0.1875, sigreg 3.9110) | val : perte 1.0065 (flow 0.1568, sigreg 8.4971) | lr 1.4e-05 | 13.0 min | reste ~1.5 h
+  epoch 14 pas 500/4 435 | perte 0.5775 (flow 0.1867, sigreg 3.9066) | 718 ex/s | attente des données 3%
+  epoch 14 pas 1 000/4 435 | perte 0.5767 (flow 0.1861, sigreg 3.9057) | 729 ex/s | attente des données 2%
+  epoch 14 pas 1 500/4 435 | perte 0.5766 (flow 0.1858, sigreg 3.9080) | 732 ex/s | attente des données 1%
+  epoch 14 pas 2 000/4 435 | perte 0.5763 (flow 0.1858, sigreg 3.9056) | 733 ex/s | attente des données 1%
+  epoch 14 pas 2 500/4 435 | perte 0.5763 (flow 0.1858, sigreg 3.9047) | 735 ex/s | attente des données 1%
+  epoch 14 pas 3 000/4 435 | perte 0.5759 (flow 0.1855, sigreg 3.9043) | 736 ex/s | attente des données 1%
+  epoch 14 pas 3 500/4 435 | perte 0.5759 (flow 0.1854, sigreg 3.9046) | 736 ex/s | attente des données 1%
+  epoch 14 pas 4 000/4 435 | perte 0.5758 (flow 0.1853, sigreg 3.9048) | 737 ex/s | attente des données 1%
+epoch 14/20 | train : perte 0.5758 (flow 0.1854, sigreg 3.9047) | val : perte 0.9949 (flow 0.1602, sigreg 8.3467) | lr 1.0e-05 | 13.0 min | reste ~1.3 h
+  epoch 15 pas 500/4 435 | perte 0.5755 (flow 0.1840, sigreg 3.9152) | 716 ex/s | attente des données 3%
+  epoch 15 pas 1 000/4 435 | perte 0.5751 (flow 0.1839, sigreg 3.9110) | 728 ex/s | attente des données 2%
+  epoch 15 pas 1 500/4 435 | perte 0.5744 (flow 0.1838, sigreg 3.9061) | 732 ex/s | attente des données 1%
+  epoch 15 pas 2 000/4 435 | perte 0.5739 (flow 0.1835, sigreg 3.9035) | 734 ex/s | attente des données 1%
+  epoch 15 pas 2 500/4 435 | perte 0.5738 (flow 0.1834, sigreg 3.9034) | 735 ex/s | attente des données 1%
+  epoch 15 pas 3 000/4 435 | perte 0.5738 (flow 0.1834, sigreg 3.9041) | 736 ex/s | attente des données 1%
+  epoch 15 pas 3 500/4 435 | perte 0.5737 (flow 0.1834, sigreg 3.9032) | 736 ex/s | attente des données 1%
+  epoch 15 pas 4 000/4 435 | perte 0.5737 (flow 0.1834, sigreg 3.9034) | 736 ex/s | attente des données 1%
+epoch 15/20 | train : perte 0.5735 (flow 0.1832, sigreg 3.9030) | val : perte 0.9033 (flow 0.1393, sigreg 7.6357) | lr 7.5e-06 | 13.0 min | reste ~1.1 h
+  epoch 16 pas 500/4 435 | perte 0.5721 (flow 0.1817, sigreg 3.9040) | 720 ex/s | attente des données 3%
+  epoch 16 pas 1 000/4 435 | perte 0.5718 (flow 0.1817, sigreg 3.9008) | 730 ex/s | attente des données 2%
+  epoch 16 pas 1 500/4 435 | perte 0.5718 (flow 0.1819, sigreg 3.8992) | 733 ex/s | attente des données 1%
+  epoch 16 pas 2 000/4 435 | perte 0.5714 (flow 0.1816, sigreg 3.8975) | 735 ex/s | attente des données 1%
+  epoch 16 pas 2 500/4 435 | perte 0.5714 (flow 0.1816, sigreg 3.8981) | 735 ex/s | attente des données 1%
+  epoch 16 pas 3 000/4 435 | perte 0.5711 (flow 0.1814, sigreg 3.8962) | 736 ex/s | attente des données 1%
+  epoch 16 pas 3 500/4 435 | perte 0.5712 (flow 0.1815, sigreg 3.8969) | 737 ex/s | attente des données 1%
+  epoch 16 pas 4 000/4 435 | perte 0.5709 (flow 0.1813, sigreg 3.8960) | 737 ex/s | attente des données 1%
+epoch 16/20 | train : perte 0.5708 (flow 0.1812, sigreg 3.8958) | val : perte 0.8933 (flow 0.1355, sigreg 7.5771) | lr 4.9e-06 | 13.0 min | reste ~0.9 h
+  epoch 17 pas 500/4 435 | perte 0.5679 (flow 0.1799, sigreg 3.8792) | 723 ex/s | attente des données 2%
+  epoch 17 pas 1 000/4 435 | perte 0.5691 (flow 0.1805, sigreg 3.8855) | 729 ex/s | attente des données 1%
+  epoch 17 pas 1 500/4 435 | perte 0.5685 (flow 0.1803, sigreg 3.8824) | 733 ex/s | attente des données 1%
+  epoch 17 pas 2 000/4 435 | perte 0.5686 (flow 0.1801, sigreg 3.8849) | 734 ex/s | attente des données 1%
+  epoch 17 pas 2 500/4 435 | perte 0.5688 (flow 0.1801, sigreg 3.8870) | 736 ex/s | attente des données 1%
+  epoch 17 pas 3 000/4 435 | perte 0.5688 (flow 0.1800, sigreg 3.8876) | 736 ex/s | attente des données 1%
+  epoch 17 pas 3 500/4 435 | perte 0.5685 (flow 0.1798, sigreg 3.8869) | 737 ex/s | attente des données 1%
+  epoch 17 pas 4 000/4 435 | perte 0.5684 (flow 0.1797, sigreg 3.8870) | 737 ex/s | attente des données 0%
+epoch 17/20 | train : perte 0.5684 (flow 0.1796, sigreg 3.8877) | val : perte 0.8620 (flow 0.1362, sigreg 7.2598) | lr 2.8e-06 | 13.0 min | reste ~0.7 h
+  epoch 18 pas 500/4 435 | perte 0.5670 (flow 0.1788, sigreg 3.8830) | 723 ex/s | attente des données 3%
+  epoch 18 pas 1 000/4 435 | perte 0.5676 (flow 0.1788, sigreg 3.8878) | 731 ex/s | attente des données 1%
+  epoch 18 pas 1 500/4 435 | perte 0.5676 (flow 0.1791, sigreg 3.8849) | 734 ex/s | attente des données 1%
+  epoch 18 pas 2 000/4 435 | perte 0.5675 (flow 0.1792, sigreg 3.8831) | 735 ex/s | attente des données 1%
+  epoch 18 pas 2 500/4 435 | perte 0.5675 (flow 0.1791, sigreg 3.8838) | 736 ex/s | attente des données 1%
+  epoch 18 pas 3 000/4 435 | perte 0.5673 (flow 0.1789, sigreg 3.8844) | 736 ex/s | attente des données 1%
+  epoch 18 pas 3 500/4 435 | perte 0.5674 (flow 0.1789, sigreg 3.8850) | 737 ex/s | attente des données 1%
+  epoch 18 pas 4 000/4 435 | perte 0.5673 (flow 0.1788, sigreg 3.8847) | 737 ex/s | attente des données 0%
+epoch 18/20 | train : perte 0.5671 (flow 0.1787, sigreg 3.8840) | val : perte 0.8635 (flow 0.1347, sigreg 7.2861) | lr 1.2e-06 | 13.0 min | reste ~0.4 h
+  epoch 19 pas 500/4 435 | perte 0.5700 (flow 0.1787, sigreg 3.9127) | 722 ex/s | attente des données 3%
+  epoch 19 pas 1 000/4 435 | perte 0.5679 (flow 0.1783, sigreg 3.8955) | 731 ex/s | attente des données 2%
+  epoch 19 pas 1 500/4 435 | perte 0.5674 (flow 0.1781, sigreg 3.8929) | 733 ex/s | attente des données 1%
+  epoch 19 pas 2 000/4 435 | perte 0.5671 (flow 0.1778, sigreg 3.8924) | 735 ex/s | attente des données 1%
+  epoch 19 pas 2 500/4 435 | perte 0.5671 (flow 0.1779, sigreg 3.8916) | 736 ex/s | attente des données 1%
+  epoch 19 pas 3 000/4 435 | perte 0.5668 (flow 0.1777, sigreg 3.8908) | 736 ex/s | attente des données 1%
+  epoch 19 pas 3 500/4 435 | perte 0.5668 (flow 0.1778, sigreg 3.8904) | 737 ex/s | attente des données 1%
+  epoch 19 pas 4 000/4 435 | perte 0.5668 (flow 0.1778, sigreg 3.8894) | 737 ex/s | attente des données 1%
+epoch 19/20 | train : perte 0.5666 (flow 0.1778, sigreg 3.8877) | val : perte 0.8576 (flow 0.1314, sigreg 7.2607) | lr 3.1e-07 | 13.0 min | reste ~0.2 h
+  epoch 20 pas 500/4 435 | perte 0.5654 (flow 0.1781, sigreg 3.8736) | 721 ex/s | attente des données 3%
+  epoch 20 pas 1 000/4 435 | perte 0.5654 (flow 0.1777, sigreg 3.8769) | 731 ex/s | attente des données 1%
+  epoch 20 pas 1 500/4 435 | perte 0.5654 (flow 0.1776, sigreg 3.8777) | 734 ex/s | attente des données 1%
+  epoch 20 pas 2 000/4 435 | perte 0.5657 (flow 0.1777, sigreg 3.8809) | 735 ex/s | attente des données 1%
+  epoch 20 pas 2 500/4 435 | perte 0.5659 (flow 0.1778, sigreg 3.8809) | 736 ex/s | attente des données 1%
+  epoch 20 pas 3 000/4 435 | perte 0.5658 (flow 0.1777, sigreg 3.8811) | 736 ex/s | attente des données 1%
+  epoch 20 pas 3 500/4 435 | perte 0.5658 (flow 0.1776, sigreg 3.8823) | 737 ex/s | attente des données 1%
+  epoch 20 pas 4 000/4 435 | perte 0.5660 (flow 0.1777, sigreg 3.8831) | 737 ex/s | attente des données 0%
+epoch 20/20 | train : perte 0.5659 (flow 0.1776, sigreg 3.8838) | val : perte 0.8550 (flow 0.1329, sigreg 7.2227) | lr 0.0e+00 | 13.0 min | reste ~0.0 h
+Terminé en 4.3 h. Poids : /workspace/stable-wm/checkpoints/fjepa-tworoom-full

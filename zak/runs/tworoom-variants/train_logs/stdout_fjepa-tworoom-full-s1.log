@@ -1,0 +1,390 @@
+/workspace/f-jepa/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/__init__.py:215: UserWarning: ale-py not found; ALE/* envs are unavailable. Install with: pip install 'stable-worldmodel[env]' or pip install ale-py.
+  from stable_worldmodel.envs import ale  # noqa: F401
+16:55:00 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+16:55:01 | INFO  | __init__.py | Cached 'action' from '/workspace/stable-wm/datasets/tworoom.h5'
+16:55:01 | INFO  | __init__.py | Cached 'proprio' from '/workspace/stable-wm/datasets/tworoom.h5'
+16:55:01 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+fjepa-tworoom-full-s1 : modèle joint_flow, config tworoom, graine 1 | 630 809 exemples (567 729 train, 8 192 val suivis), 4 435 pas par epoch, 20 epochs, 9 processus de chargement, torch.compile : oui
+/workspace/f-jepa/.venv/lib/python3.10/site-packages/lance/__init__.py:359: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+  epoch 1 pas 500/4 435 | perte 3.3341 (prédiction 1.3551, sigreg 19.7884) | 286 ex/s | attente des données 1%
+  epoch 1 pas 1 000/4 435 | perte 2.4685 (prédiction 1.2087, sigreg 12.5969) | 345 ex/s | attente des données 1%
+  epoch 1 pas 1 500/4 435 | perte 2.0637 (prédiction 1.0607, sigreg 10.0298) | 371 ex/s | attente des données 1%
+  epoch 1 pas 2 000/4 435 | perte 1.8159 (prédiction 0.9434, sigreg 8.7250) | 386 ex/s | attente des données 1%
+  epoch 1 pas 2 500/4 435 | perte 1.6504 (prédiction 0.8575, sigreg 7.9284) | 395 ex/s | attente des données 1%
+  epoch 1 pas 3 000/4 435 | perte 1.5310 (prédiction 0.7932, sigreg 7.3776) | 401 ex/s | attente des données 0%
+  epoch 1 pas 3 500/4 435 | perte 1.4396 (prédiction 0.7415, sigreg 6.9808) | 405 ex/s | attente des données 0%
+  epoch 1 pas 4 000/4 435 | perte 1.3677 (prédiction 0.6995, sigreg 6.6817) | 408 ex/s | attente des données 0%
+/workspace/f-jepa/.venv/lib/python3.10/site-packages/lance/__init__.py:359: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+17:18:34 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_1.pt 📦📦📦
+epoch  1/20 | train : perte 1.3155 (prédiction 0.6682, sigreg 6.4731) | val : perte 15.9323 (prédiction 1.1530, sigreg 147.7969) | lr 5.0e-05 | 23.5 min | reste ~7.4 h
+  epoch 2 pas 500/4 435 | perte 0.8153 (prédiction 0.3599, sigreg 4.5539) | 429 ex/s | attente des données 2%
+  epoch 2 pas 1 000/4 435 | perte 0.8061 (prédiction 0.3510, sigreg 4.5510) | 433 ex/s | attente des données 1%
+  epoch 2 pas 1 500/4 435 | perte 0.7988 (prédiction 0.3439, sigreg 4.5490) | 434 ex/s | attente des données 1%
+  epoch 2 pas 2 000/4 435 | perte 0.7930 (prédiction 0.3382, sigreg 4.5478) | 434 ex/s | attente des données 1%
+  epoch 2 pas 2 500/4 435 | perte 0.7872 (prédiction 0.3329, sigreg 4.5433) | 435 ex/s | attente des données 1%
+  epoch 2 pas 3 000/4 435 | perte 0.7823 (prédiction 0.3282, sigreg 4.5405) | 435 ex/s | attente des données 0%
+  epoch 2 pas 3 500/4 435 | perte 0.7780 (prédiction 0.3241, sigreg 4.5391) | 435 ex/s | attente des données 0%
+  epoch 2 pas 4 000/4 435 | perte 0.7741 (prédiction 0.3206, sigreg 4.5347) | 435 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+17:40:43 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_2.pt 📦📦📦
+epoch  2/20 | train : perte 0.7712 (prédiction 0.3178, sigreg 4.5333) | val : perte 8.5312 (prédiction 0.6948, sigreg 78.3984) | lr 4.9e-05 | 22.1 min | reste ~6.8 h
+  epoch 3 pas 500/4 435 | perte 0.7382 (prédiction 0.2888, sigreg 4.4953) | 431 ex/s | attente des données 2%
+  epoch 3 pas 1 000/4 435 | perte 0.7352 (prédiction 0.2861, sigreg 4.4902) | 434 ex/s | attente des données 1%
+  epoch 3 pas 1 500/4 435 | perte 0.7323 (prédiction 0.2851, sigreg 4.4717) | 434 ex/s | attente des données 1%
+  epoch 3 pas 2 000/4 435 | perte 0.7276 (prédiction 0.2842, sigreg 4.4347) | 435 ex/s | attente des données 1%
+  epoch 3 pas 2 500/4 435 | perte 0.7234 (prédiction 0.2827, sigreg 4.4067) | 435 ex/s | attente des données 0%
+  epoch 3 pas 3 000/4 435 | perte 0.7189 (prédiction 0.2803, sigreg 4.3861) | 435 ex/s | attente des données 0%
+  epoch 3 pas 3 500/4 435 | perte 0.7151 (prédiction 0.2781, sigreg 4.3692) | 436 ex/s | attente des données 0%
+  epoch 3 pas 4 000/4 435 | perte 0.7117 (prédiction 0.2759, sigreg 4.3580) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+18:02:50 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_3.pt 📦📦📦
+epoch  3/20 | train : perte 0.7090 (prédiction 0.2741, sigreg 4.3491) | val : perte 3.8906 (prédiction 0.4187, sigreg 34.7188) | lr 4.8e-05 | 22.1 min | reste ~6.4 h
+  epoch 4 pas 500/4 435 | perte 0.6793 (prédiction 0.2540, sigreg 4.2541) | 431 ex/s | attente des données 1%
+  epoch 4 pas 1 000/4 435 | perte 0.6770 (prédiction 0.2522, sigreg 4.2479) | 433 ex/s | attente des données 1%
+  epoch 4 pas 1 500/4 435 | perte 0.6761 (prédiction 0.2511, sigreg 4.2501) | 434 ex/s | attente des données 1%
+  epoch 4 pas 2 000/4 435 | perte 0.6750 (prédiction 0.2498, sigreg 4.2517) | 435 ex/s | attente des données 0%
+  epoch 4 pas 2 500/4 435 | perte 0.6732 (prédiction 0.2481, sigreg 4.2512) | 435 ex/s | attente des données 0%
+  epoch 4 pas 3 000/4 435 | perte 0.6716 (prédiction 0.2463, sigreg 4.2533) | 435 ex/s | attente des données 0%
+  epoch 4 pas 3 500/4 435 | perte 0.6698 (prédiction 0.2444, sigreg 4.2543) | 435 ex/s | attente des données 0%
+  epoch 4 pas 4 000/4 435 | perte 0.6682 (prédiction 0.2427, sigreg 4.2549) | 435 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+18:25:02 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_4.pt 📦📦📦
+epoch  4/20 | train : perte 0.6668 (prédiction 0.2413, sigreg 4.2548) | val : perte 2.1807 (prédiction 0.3335, sigreg 18.4736) | lr 4.6e-05 | 22.2 min | reste ~6.0 h
+  epoch 5 pas 500/4 435 | perte 0.6498 (prédiction 0.2277, sigreg 4.2208) | 429 ex/s | attente des données 2%
+  epoch 5 pas 1 000/4 435 | perte 0.6477 (prédiction 0.2271, sigreg 4.2069) | 432 ex/s | attente des données 1%
+  epoch 5 pas 1 500/4 435 | perte 0.6462 (prédiction 0.2267, sigreg 4.1953) | 434 ex/s | attente des données 1%
+  epoch 5 pas 2 000/4 435 | perte 0.6443 (prédiction 0.2260, sigreg 4.1829) | 434 ex/s | attente des données 1%
+  epoch 5 pas 2 500/4 435 | perte 0.6427 (prédiction 0.2255, sigreg 4.1728) | 435 ex/s | attente des données 0%
+  epoch 5 pas 3 000/4 435 | perte 0.6412 (prédiction 0.2247, sigreg 4.1656) | 435 ex/s | attente des données 0%
+  epoch 5 pas 3 500/4 435 | perte 0.6399 (prédiction 0.2239, sigreg 4.1595) | 435 ex/s | attente des données 0%
+  epoch 5 pas 4 000/4 435 | perte 0.6386 (prédiction 0.2232, sigreg 4.1539) | 435 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+18:47:04 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_5.pt 📦📦📦
+epoch  5/20 | train : perte 0.6376 (prédiction 0.2226, sigreg 4.1499) | val : perte 1.0009 (prédiction 0.2412, sigreg 7.5996) | lr 4.3e-05 | 22.0 min | reste ~5.6 h
+  epoch 6 pas 500/4 435 | perte 0.6256 (prédiction 0.2152, sigreg 4.1042) | 431 ex/s | attente des données 2%
+  epoch 6 pas 1 000/4 435 | perte 0.6245 (prédiction 0.2141, sigreg 4.1037) | 434 ex/s | attente des données 1%
+  epoch 6 pas 1 500/4 435 | perte 0.6233 (prédiction 0.2128, sigreg 4.1048) | 435 ex/s | attente des données 1%
+  epoch 6 pas 2 000/4 435 | perte 0.6221 (prédiction 0.2117, sigreg 4.1037) | 436 ex/s | attente des données 0%
+  epoch 6 pas 2 500/4 435 | perte 0.6207 (prédiction 0.2103, sigreg 4.1037) | 436 ex/s | attente des données 0%
+  epoch 6 pas 3 000/4 435 | perte 0.6196 (prédiction 0.2093, sigreg 4.1023) | 436 ex/s | attente des données 0%
+  epoch 6 pas 3 500/4 435 | perte 0.6186 (prédiction 0.2085, sigreg 4.1014) | 436 ex/s | attente des données 0%
+  epoch 6 pas 4 000/4 435 | perte 0.6177 (prédiction 0.2078, sigreg 4.0992) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+19:09:12 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_6.pt 📦📦📦
+epoch  6/20 | train : perte 0.6168 (prédiction 0.2072, sigreg 4.0965) | val : perte 3.6361 (prédiction 0.4776, sigreg 31.5918) | lr 4.0e-05 | 22.1 min | reste ~5.2 h
+  epoch 7 pas 500/4 435 | perte 0.6059 (prédiction 0.2003, sigreg 4.0562) | 432 ex/s | attente des données 1%
+  epoch 7 pas 1 000/4 435 | perte 0.6051 (prédiction 0.2000, sigreg 4.0506) | 435 ex/s | attente des données 1%
+  epoch 7 pas 1 500/4 435 | perte 0.6046 (prédiction 0.1997, sigreg 4.0487) | 435 ex/s | attente des données 0%
+  epoch 7 pas 2 000/4 435 | perte 0.6038 (prédiction 0.1992, sigreg 4.0458) | 436 ex/s | attente des données 0%
+  epoch 7 pas 2 500/4 435 | perte 0.6031 (prédiction 0.1988, sigreg 4.0425) | 436 ex/s | attente des données 0%
+  epoch 7 pas 3 000/4 435 | perte 0.6024 (prédiction 0.1983, sigreg 4.0404) | 436 ex/s | attente des données 0%
+  epoch 7 pas 3 500/4 435 | perte 0.6018 (prédiction 0.1981, sigreg 4.0373) | 436 ex/s | attente des données 0%
+  epoch 7 pas 4 000/4 435 | perte 0.6011 (prédiction 0.1977, sigreg 4.0338) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+19:31:12 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_7.pt 📦📦📦
+epoch  7/20 | train : perte 0.6005 (prédiction 0.1974, sigreg 4.0308) | val : perte 0.7974 (prédiction 0.1861, sigreg 6.1123) | lr 3.7e-05 | 22.0 min | reste ~4.8 h
+  epoch 8 pas 500/4 435 | perte 0.5926 (prédiction 0.1943, sigreg 3.9827) | 431 ex/s | attente des données 1%
+  epoch 8 pas 1 000/4 435 | perte 0.5920 (prédiction 0.1946, sigreg 3.9752) | 434 ex/s | attente des données 1%
+  epoch 8 pas 1 500/4 435 | perte 0.5904 (prédiction 0.1945, sigreg 3.9599) | 435 ex/s | attente des données 1%
+  epoch 8 pas 2 000/4 435 | perte 0.5890 (prédiction 0.1944, sigreg 3.9470) | 435 ex/s | attente des données 0%
+  epoch 8 pas 2 500/4 435 | perte 0.5876 (prédiction 0.1942, sigreg 3.9346) | 436 ex/s | attente des données 0%
+  epoch 8 pas 3 000/4 435 | perte 0.5865 (prédiction 0.1937, sigreg 3.9285) | 436 ex/s | attente des données 0%
+  epoch 8 pas 3 500/4 435 | perte 0.5853 (prédiction 0.1933, sigreg 3.9201) | 436 ex/s | attente des données 0%
+  epoch 8 pas 4 000/4 435 | perte 0.5845 (prédiction 0.1929, sigreg 3.9156) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+19:53:10 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_8.pt 📦📦📦
+epoch  8/20 | train : perte 0.5838 (prédiction 0.1925, sigreg 3.9126) | val : perte 1.6849 (prédiction 0.3121, sigreg 13.7227) | lr 3.3e-05 | 22.0 min | reste ~4.5 h
+  epoch 9 pas 500/4 435 | perte 0.5747 (prédiction 0.1886, sigreg 3.8613) | 432 ex/s | attente des données 1%
+  epoch 9 pas 1 000/4 435 | perte 0.5741 (prédiction 0.1878, sigreg 3.8629) | 434 ex/s | attente des données 1%
+  epoch 9 pas 1 500/4 435 | perte 0.5740 (prédiction 0.1875, sigreg 3.8652) | 435 ex/s | attente des données 1%
+  epoch 9 pas 2 000/4 435 | perte 0.5732 (prédiction 0.1869, sigreg 3.8637) | 435 ex/s | attente des données 0%
+  epoch 9 pas 2 500/4 435 | perte 0.5727 (prédiction 0.1863, sigreg 3.8645) | 436 ex/s | attente des données 0%
+  epoch 9 pas 3 000/4 435 | perte 0.5722 (prédiction 0.1857, sigreg 3.8647) | 436 ex/s | attente des données 0%
+  epoch 9 pas 3 500/4 435 | perte 0.5715 (prédiction 0.1852, sigreg 3.8637) | 436 ex/s | attente des données 0%
+  epoch 9 pas 4 000/4 435 | perte 0.5711 (prédiction 0.1847, sigreg 3.8637) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+20:15:17 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_9.pt 📦📦📦
+epoch  9/20 | train : perte 0.5707 (prédiction 0.1843, sigreg 3.8636) | val : perte 0.7685 (prédiction 0.1797, sigreg 5.8892) | lr 2.9e-05 | 22.1 min | reste ~4.1 h
+  epoch 10 pas 500/4 435 | perte 0.5655 (prédiction 0.1790, sigreg 3.8646) | 430 ex/s | attente des données 1%
+  epoch 10 pas 1 000/4 435 | perte 0.5648 (prédiction 0.1785, sigreg 3.8629) | 434 ex/s | attente des données 1%
+  epoch 10 pas 1 500/4 435 | perte 0.5645 (prédiction 0.1782, sigreg 3.8628) | 435 ex/s | attente des données 1%
+  epoch 10 pas 2 000/4 435 | perte 0.5640 (prédiction 0.1778, sigreg 3.8626) | 435 ex/s | attente des données 0%
+  epoch 10 pas 2 500/4 435 | perte 0.5637 (prédiction 0.1775, sigreg 3.8622) | 436 ex/s | attente des données 0%
+  epoch 10 pas 3 000/4 435 | perte 0.5632 (prédiction 0.1770, sigreg 3.8614) | 436 ex/s | attente des données 0%
+  epoch 10 pas 3 500/4 435 | perte 0.5627 (prédiction 0.1766, sigreg 3.8613) | 436 ex/s | attente des données 0%
+  epoch 10 pas 4 000/4 435 | perte 0.5621 (prédiction 0.1761, sigreg 3.8599) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+20:37:16 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_10.pt 📦📦📦
+epoch 10/20 | train : perte 0.5617 (prédiction 0.1757, sigreg 3.8596) | val : perte 0.9814 (prédiction 0.2011, sigreg 7.8037) | lr 2.5e-05 | 22.0 min | reste ~3.7 h
+  epoch 11 pas 500/4 435 | perte 0.5578 (prédiction 0.1721, sigreg 3.8561) | 431 ex/s | attente des données 2%
+  epoch 11 pas 1 000/4 435 | perte 0.5573 (prédiction 0.1718, sigreg 3.8550) | 434 ex/s | attente des données 1%
+  epoch 11 pas 1 500/4 435 | perte 0.5572 (prédiction 0.1714, sigreg 3.8577) | 435 ex/s | attente des données 1%
+  epoch 11 pas 2 000/4 435 | perte 0.5566 (prédiction 0.1710, sigreg 3.8557) | 435 ex/s | attente des données 0%
+  epoch 11 pas 2 500/4 435 | perte 0.5562 (prédiction 0.1707, sigreg 3.8541) | 436 ex/s | attente des données 0%
+  epoch 11 pas 3 000/4 435 | perte 0.5557 (prédiction 0.1704, sigreg 3.8533) | 436 ex/s | attente des données 0%
+  epoch 11 pas 3 500/4 435 | perte 0.5552 (prédiction 0.1701, sigreg 3.8511) | 436 ex/s | attente des données 0%
+  epoch 11 pas 4 000/4 435 | perte 0.5547 (prédiction 0.1698, sigreg 3.8495) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+20:59:15 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_11.pt 📦📦📦
+epoch 11/20 | train : perte 0.5543 (prédiction 0.1695, sigreg 3.8480) | val : perte 0.7058 (prédiction 0.1631, sigreg 5.4268) | lr 2.1e-05 | 22.0 min | reste ~3.3 h
+  epoch 12 pas 500/4 435 | perte 0.5507 (prédiction 0.1677, sigreg 3.8293) | 430 ex/s | attente des données 1%
+  epoch 12 pas 1 000/4 435 | perte 0.5510 (prédiction 0.1670, sigreg 3.8396) | 434 ex/s | attente des données 1%
+  epoch 12 pas 1 500/4 435 | perte 0.5512 (prédiction 0.1670, sigreg 3.8417) | 435 ex/s | attente des données 1%
+  epoch 12 pas 2 000/4 435 | perte 0.5502 (prédiction 0.1665, sigreg 3.8367) | 435 ex/s | attente des données 0%
+  epoch 12 pas 2 500/4 435 | perte 0.5497 (prédiction 0.1663, sigreg 3.8339) | 436 ex/s | attente des données 0%
+  epoch 12 pas 3 000/4 435 | perte 0.5492 (prédiction 0.1661, sigreg 3.8318) | 436 ex/s | attente des données 0%
+  epoch 12 pas 3 500/4 435 | perte 0.5491 (prédiction 0.1659, sigreg 3.8319) | 436 ex/s | attente des données 0%
+  epoch 12 pas 4 000/4 435 | perte 0.5488 (prédiction 0.1658, sigreg 3.8298) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+21:21:23 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_12.pt 📦📦📦
+epoch 12/20 | train : perte 0.5485 (prédiction 0.1657, sigreg 3.8284) | val : perte 0.6196 (prédiction 0.1376, sigreg 4.8218) | lr 1.8e-05 | 22.1 min | reste ~3.0 h
+  epoch 13 pas 500/4 435 | perte 0.5453 (prédiction 0.1641, sigreg 3.8123) | 432 ex/s | attente des données 1%
+  epoch 13 pas 1 000/4 435 | perte 0.5445 (prédiction 0.1637, sigreg 3.8076) | 434 ex/s | attente des données 1%
+  epoch 13 pas 1 500/4 435 | perte 0.5445 (prédiction 0.1635, sigreg 3.8098) | 435 ex/s | attente des données 1%
+  epoch 13 pas 2 000/4 435 | perte 0.5444 (prédiction 0.1634, sigreg 3.8092) | 435 ex/s | attente des données 0%
+  epoch 13 pas 2 500/4 435 | perte 0.5440 (prédiction 0.1633, sigreg 3.8069) | 435 ex/s | attente des données 0%
+  epoch 13 pas 3 000/4 435 | perte 0.5437 (prédiction 0.1631, sigreg 3.8063) | 436 ex/s | attente des données 0%
+  epoch 13 pas 3 500/4 435 | perte 0.5435 (prédiction 0.1631, sigreg 3.8043) | 436 ex/s | attente des données 0%
+  epoch 13 pas 4 000/4 435 | perte 0.5433 (prédiction 0.1630, sigreg 3.8025) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+21:43:24 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_13.pt 📦📦📦
+epoch 13/20 | train : perte 0.5431 (prédiction 0.1629, sigreg 3.8020) | val : perte 0.7001 (prédiction 0.1491, sigreg 5.5103) | lr 1.4e-05 | 22.0 min | reste ~2.6 h
+  epoch 14 pas 500/4 435 | perte 0.5400 (prédiction 0.1617, sigreg 3.7826) | 431 ex/s | attente des données 2%
+  epoch 14 pas 1 000/4 435 | perte 0.5396 (prédiction 0.1613, sigreg 3.7832) | 434 ex/s | attente des données 1%
+  epoch 14 pas 1 500/4 435 | perte 0.5395 (prédiction 0.1614, sigreg 3.7815) | 434 ex/s | attente des données 1%
+  epoch 14 pas 2 000/4 435 | perte 0.5391 (prédiction 0.1612, sigreg 3.7790) | 435 ex/s | attente des données 1%
+  epoch 14 pas 2 500/4 435 | perte 0.5392 (prédiction 0.1613, sigreg 3.7783) | 434 ex/s | attente des données 0%
+  epoch 14 pas 3 000/4 435 | perte 0.5392 (prédiction 0.1613, sigreg 3.7784) | 435 ex/s | attente des données 0%
+  epoch 14 pas 3 500/4 435 | perte 0.5388 (prédiction 0.1613, sigreg 3.7749) | 435 ex/s | attente des données 0%
+  epoch 14 pas 4 000/4 435 | perte 0.5385 (prédiction 0.1612, sigreg 3.7734) | 435 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+22:05:28 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_14.pt 📦📦📦
+epoch 14/20 | train : perte 0.5382 (prédiction 0.1610, sigreg 3.7720) | val : perte 0.5896 (prédiction 0.1292, sigreg 4.6045) | lr 1.0e-05 | 22.1 min | reste ~2.2 h
+  epoch 15 pas 500/4 435 | perte 0.5348 (prédiction 0.1602, sigreg 3.7458) | 431 ex/s | attente des données 2%
+  epoch 15 pas 1 000/4 435 | perte 0.5342 (prédiction 0.1596, sigreg 3.7463) | 433 ex/s | attente des données 1%
+  epoch 15 pas 1 500/4 435 | perte 0.5344 (prédiction 0.1596, sigreg 3.7482) | 434 ex/s | attente des données 1%
+  epoch 15 pas 2 000/4 435 | perte 0.5344 (prédiction 0.1595, sigreg 3.7496) | 435 ex/s | attente des données 1%
+  epoch 15 pas 2 500/4 435 | perte 0.5340 (prédiction 0.1595, sigreg 3.7454) | 435 ex/s | attente des données 0%
+  epoch 15 pas 3 000/4 435 | perte 0.5341 (prédiction 0.1595, sigreg 3.7469) | 435 ex/s | attente des données 0%
+  epoch 15 pas 3 500/4 435 | perte 0.5340 (prédiction 0.1594, sigreg 3.7462) | 436 ex/s | attente des données 0%
+  epoch 15 pas 4 000/4 435 | perte 0.5340 (prédiction 0.1595, sigreg 3.7456) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+22:27:36 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_15.pt 📦📦📦
+epoch 15/20 | train : perte 0.5340 (prédiction 0.1594, sigreg 3.7461) | val : perte 0.5982 (prédiction 0.1335, sigreg 4.6475) | lr 7.5e-06 | 22.1 min | reste ~1.8 h
+  epoch 16 pas 500/4 435 | perte 0.5312 (prédiction 0.1580, sigreg 3.7319) | 430 ex/s | attente des données 1%
+  epoch 16 pas 1 000/4 435 | perte 0.5301 (prédiction 0.1579, sigreg 3.7213) | 432 ex/s | attente des données 1%
+  epoch 16 pas 1 500/4 435 | perte 0.5303 (prédiction 0.1578, sigreg 3.7245) | 434 ex/s | attente des données 1%
+  epoch 16 pas 2 000/4 435 | perte 0.5302 (prédiction 0.1577, sigreg 3.7248) | 435 ex/s | attente des données 0%
+  epoch 16 pas 2 500/4 435 | perte 0.5304 (prédiction 0.1577, sigreg 3.7267) | 435 ex/s | attente des données 0%
+  epoch 16 pas 3 000/4 435 | perte 0.5305 (prédiction 0.1578, sigreg 3.7271) | 435 ex/s | attente des données 0%
+  epoch 16 pas 3 500/4 435 | perte 0.5304 (prédiction 0.1577, sigreg 3.7268) | 436 ex/s | attente des données 0%
+  epoch 16 pas 4 000/4 435 | perte 0.5304 (prédiction 0.1577, sigreg 3.7272) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+22:49:37 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_16.pt 📦📦📦
+epoch 16/20 | train : perte 0.5302 (prédiction 0.1576, sigreg 3.7256) | val : perte 0.5255 (prédiction 0.1110, sigreg 4.1436) | lr 4.9e-06 | 22.0 min | reste ~1.5 h
+  epoch 17 pas 500/4 435 | perte 0.5301 (prédiction 0.1567, sigreg 3.7334) | 431 ex/s | attente des données 2%
+  epoch 17 pas 1 000/4 435 | perte 0.5295 (prédiction 0.1565, sigreg 3.7300) | 434 ex/s | attente des données 1%
+  epoch 17 pas 1 500/4 435 | perte 0.5291 (prédiction 0.1565, sigreg 3.7261) | 435 ex/s | attente des données 1%
+  epoch 17 pas 2 000/4 435 | perte 0.5285 (prédiction 0.1563, sigreg 3.7222) | 435 ex/s | attente des données 0%
+  epoch 17 pas 2 500/4 435 | perte 0.5287 (prédiction 0.1564, sigreg 3.7231) | 436 ex/s | attente des données 0%
+  epoch 17 pas 3 000/4 435 | perte 0.5286 (prédiction 0.1564, sigreg 3.7222) | 436 ex/s | attente des données 0%
+  epoch 17 pas 3 500/4 435 | perte 0.5285 (prédiction 0.1563, sigreg 3.7218) | 436 ex/s | attente des données 0%
+  epoch 17 pas 4 000/4 435 | perte 0.5285 (prédiction 0.1563, sigreg 3.7219) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+23:11:44 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_17.pt 📦📦📦
+epoch 17/20 | train : perte 0.5283 (prédiction 0.1562, sigreg 3.7206) | val : perte 0.5281 (prédiction 0.1112, sigreg 4.1692) | lr 2.8e-06 | 22.1 min | reste ~1.1 h
+  epoch 18 pas 500/4 435 | perte 0.5278 (prédiction 0.1557, sigreg 3.7208) | 432 ex/s | attente des données 1%
+  epoch 18 pas 1 000/4 435 | perte 0.5272 (prédiction 0.1554, sigreg 3.7182) | 434 ex/s | attente des données 1%
+  epoch 18 pas 1 500/4 435 | perte 0.5273 (prédiction 0.1555, sigreg 3.7179) | 435 ex/s | attente des données 1%
+  epoch 18 pas 2 000/4 435 | perte 0.5274 (prédiction 0.1554, sigreg 3.7194) | 435 ex/s | attente des données 0%
+  epoch 18 pas 2 500/4 435 | perte 0.5272 (prédiction 0.1553, sigreg 3.7195) | 435 ex/s | attente des données 0%
+  epoch 18 pas 3 000/4 435 | perte 0.5271 (prédiction 0.1553, sigreg 3.7180) | 436 ex/s | attente des données 0%
+  epoch 18 pas 3 500/4 435 | perte 0.5269 (prédiction 0.1553, sigreg 3.7165) | 436 ex/s | attente des données 0%
+  epoch 18 pas 4 000/4 435 | perte 0.5267 (prédiction 0.1551, sigreg 3.7159) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+23:33:52 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_18.pt 📦📦📦
+epoch 18/20 | train : perte 0.5266 (prédiction 0.1551, sigreg 3.7148) | val : perte 0.5070 (prédiction 0.1062, sigreg 4.0073) | lr 1.2e-06 | 22.1 min | reste ~0.7 h
+  epoch 19 pas 500/4 435 | perte 0.5263 (prédiction 0.1545, sigreg 3.7181) | 432 ex/s | attente des données 1%
+  epoch 19 pas 1 000/4 435 | perte 0.5263 (prédiction 0.1545, sigreg 3.7179) | 433 ex/s | attente des données 1%
+  epoch 19 pas 1 500/4 435 | perte 0.5266 (prédiction 0.1548, sigreg 3.7182) | 434 ex/s | attente des données 1%
+  epoch 19 pas 2 000/4 435 | perte 0.5264 (prédiction 0.1547, sigreg 3.7167) | 435 ex/s | attente des données 0%
+  epoch 19 pas 2 500/4 435 | perte 0.5262 (prédiction 0.1546, sigreg 3.7164) | 435 ex/s | attente des données 0%
+  epoch 19 pas 3 000/4 435 | perte 0.5262 (prédiction 0.1546, sigreg 3.7157) | 435 ex/s | attente des données 0%
+  epoch 19 pas 3 500/4 435 | perte 0.5262 (prédiction 0.1547, sigreg 3.7148) | 436 ex/s | attente des données 0%
+  epoch 19 pas 4 000/4 435 | perte 0.5263 (prédiction 0.1547, sigreg 3.7157) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+23:56:00 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_19.pt 📦📦📦
+epoch 19/20 | train : perte 0.5262 (prédiction 0.1547, sigreg 3.7150) | val : perte 0.4996 (prédiction 0.1048, sigreg 3.9490) | lr 3.1e-07 | 22.1 min | reste ~0.4 h
+  epoch 20 pas 500/4 435 | perte 0.5255 (prédiction 0.1540, sigreg 3.7151) | 432 ex/s | attente des données 1%
+  epoch 20 pas 1 000/4 435 | perte 0.5258 (prédiction 0.1545, sigreg 3.7136) | 434 ex/s | attente des données 1%
+  epoch 20 pas 1 500/4 435 | perte 0.5259 (prédiction 0.1546, sigreg 3.7136) | 434 ex/s | attente des données 1%
+  epoch 20 pas 2 000/4 435 | perte 0.5258 (prédiction 0.1546, sigreg 3.7126) | 435 ex/s | attente des données 0%
+  epoch 20 pas 2 500/4 435 | perte 0.5256 (prédiction 0.1545, sigreg 3.7112) | 435 ex/s | attente des données 0%
+  epoch 20 pas 3 000/4 435 | perte 0.5256 (prédiction 0.1545, sigreg 3.7109) | 436 ex/s | attente des données 0%
+  epoch 20 pas 3 500/4 435 | perte 0.5257 (prédiction 0.1544, sigreg 3.7127) | 436 ex/s | attente des données 0%
+  epoch 20 pas 4 000/4 435 | perte 0.5256 (prédiction 0.1544, sigreg 3.7123) | 436 ex/s | attente des données 0%
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+00:18:06 | INFO  | utils.py    | 📦📦📦 Model saved to /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1/weights_epoch_20.pt 📦📦📦
+epoch 20/20 | train : perte 0.5255 (prédiction 0.1544, sigreg 3.7120) | val : perte 0.4984 (prédiction 0.1061, sigreg 3.9226) | lr 0.0e+00 | 22.1 min | reste ~0.0 h
+Terminé en 7.4 h. Poids : /workspace/stable-wm/checkpoints/fjepa-tworoom-full-s1
