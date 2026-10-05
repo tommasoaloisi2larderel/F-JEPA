@@ -1,0 +1,38 @@
+[16:54] joint_det-tworoom-e2e : déjà évalué (runs/tworoom-variants/summary.json), pas réentraîné
+[16:54] ar_flow-tworoom-e2e : déjà évalué (runs/tworoom-variants/summary.json), pas réentraîné
+[16:54] joint_det-tworoom-e2e-reacherconfig : déjà évalué (runs/tworoom-variants/summary.json), pas réentraîné
+[16:54] ar_flow-tworoom-e2e-reacherconfig : déjà évalué (runs/tworoom-variants/summary.json), pas réentraîné
+[16:54] 4 entraînements sur 4 carte(s), 38 vCPU : 9 processus de chargement par entraînement, jusqu'à 6 évaluations par carte libre. Limite de sécurité : 12 h.
+[16:54] 0 évaluations de référence (LeWM officiel, hasard, Flow-JEPA du premier run) à faire
+[16:54] GPU 0 : entraînement joint_det-tworoom-e2e-reacherconfig-s1 lancé (9 processus de chargement)   suivre : tail -f logs/train_e2e_joint_det-tworoom-e2e-reacherconfig-s1.log
+[16:54] GPU 1 : entraînement fjepa-tworoom-full-s1 lancé (9 processus de chargement)   suivre : tail -f logs/train_e2e_fjepa-tworoom-full-s1.log
+[16:54] GPU 2 : entraînement joint_det-tworoom-e2e-reacherconfig-sanscausal lancé (9 processus de chargement)   suivre : tail -f logs/train_e2e_joint_det-tworoom-e2e-reacherconfig-sanscausal.log
+[16:54] GPU 3 : entraînement ar_det-tworoom-e2e-reacherconfig lancé (9 processus de chargement)   suivre : tail -f logs/train_e2e_ar_det-tworoom-e2e-reacherconfig.log
+[00:17] GPU 2 : entraînement joint_det-tworoom-e2e-reacherconfig-sanscausal terminé, 6 évaluations ajoutées à la file
+[00:18] GPU 1 : entraînement fjepa-tworoom-full-s1 terminé, 6 évaluations ajoutées à la file
+[00:19] GPU 0 : entraînement joint_det-tworoom-e2e-reacherconfig-s1 terminé, 6 évaluations ajoutées à la file
+[00:19] GPU 3 : entraînement ar_det-tworoom-e2e-reacherconfig terminé, 6 évaluations ajoutées à la file
+[00:20] évaluation joint_det-tworoom-e2e-reacherconfig-sanscausal_e10_cem30_propre_ep50 : 94.0 % (2.1 min)
+[00:20] évaluation joint_det-tworoom-e2e-reacherconfig-sanscausal_e20_cem30_propre_ep50 : 96.0 % (2.2 min)
+[00:20] évaluation joint_det-tworoom-e2e-reacherconfig-sanscausal_e20_cem30_bruit_ep50 : 94.0 % (2.4 min)
+[00:20] évaluation joint_det-tworoom-e2e-reacherconfig-sanscausal_e10_cem30_bruit_ep50 : 86.0 % (2.5 min)
+[00:21] évaluation joint_det-tworoom-e2e-reacherconfig-s1_e10_cem30_propre_ep50 : 98.0 % (2.1 min)
+[00:21] évaluation joint_det-tworoom-e2e-reacherconfig-s1_e20_cem30_propre_ep50 : 94.0 % (2.2 min)
+[00:21] évaluation joint_det-tworoom-e2e-reacherconfig-s1_e20_cem30_bruit_ep50 : 90.0 % (2.5 min)
+[00:22] évaluation joint_det-tworoom-e2e-reacherconfig-s1_e10_cem30_bruit_ep50 : 48.0 % (2.8 min)
+[00:22] évaluation joint_det-tworoom-e2e-reacherconfig-sanscausal_e20_cem30_propre_ep200 : 91.0 % (4.7 min)
+[00:22] évaluation joint_det-tworoom-e2e-reacherconfig-sanscausal_e20_cem30_bruit_ep200 : 86.5 % (4.9 min)
+[00:23] évaluation ar_det-tworoom-e2e-reacherconfig_e10_cem30_propre_ep50 : 88.0 % (3.3 min)
+[00:23] évaluation ar_det-tworoom-e2e-reacherconfig_e10_cem30_bruit_ep50 : 86.0 % (3.4 min)
+[00:23] évaluation ar_det-tworoom-e2e-reacherconfig_e20_cem30_propre_ep50 : 82.0 % (3.4 min)
+[00:23] évaluation ar_det-tworoom-e2e-reacherconfig_e20_cem30_bruit_ep50 : 78.0 % (3.5 min)
+[00:24] évaluation joint_det-tworoom-e2e-reacherconfig-s1_e20_cem30_propre_ep200 : 92.0 % (4.9 min)
+[00:24] évaluation joint_det-tworoom-e2e-reacherconfig-s1_e20_cem30_bruit_ep200 : 82.0 % (5.3 min)
+[00:28] évaluation ar_det-tworoom-e2e-reacherconfig_e20_cem30_propre_ep200 : 82.5 % (8.0 min)
+[00:28] évaluation ar_det-tworoom-e2e-reacherconfig_e20_cem30_bruit_ep200 : 74.5 % (8.5 min)
+[00:29] évaluation fjepa-tworoom-full-s1_e20_cem30_propre_ep50 : 100.0 % (10.6 min)
+[00:29] évaluation fjepa-tworoom-full-s1_e10_cem30_propre_ep50 : 98.0 % (10.9 min)
+[00:30] évaluation fjepa-tworoom-full-s1_e10_cem30_bruit_ep50 : 94.0 % (12.1 min)
+[00:30] évaluation fjepa-tworoom-full-s1_e20_cem30_bruit_ep50 : 84.0 % (12.2 min)
+[00:41] évaluation fjepa-tworoom-full-s1_e20_cem30_propre_ep200 : 98.0 % (22.4 min)
+[00:42] évaluation fjepa-tworoom-full-s1_e20_cem30_bruit_ep200 : 83.5 % (24.1 min)

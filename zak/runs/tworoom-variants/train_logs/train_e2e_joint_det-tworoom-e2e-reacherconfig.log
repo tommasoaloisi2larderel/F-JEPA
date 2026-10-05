@@ -1,0 +1,182 @@
+joint_det-tworoom-e2e-reacherconfig : modèle joint_det, config reacher | 630 809 exemples (567 729 train, 8 192 val suivis), 4 435 pas par epoch, 20 epochs, 9 processus de chargement, torch.compile : oui
+  epoch 1 pas 500/4 435 | perte 2.5119 (prédiction 0.5656, sigreg 19.4637) | 114 ex/s | attente des données 59%
+  epoch 1 pas 1 000/4 435 | perte 1.8353 (prédiction 0.5704, sigreg 12.6491) | 154 ex/s | attente des données 55%
+  epoch 1 pas 1 500/4 435 | perte 1.4789 (prédiction 0.4701, sigreg 10.0879) | 176 ex/s | attente des données 53%
+  epoch 1 pas 2 000/4 435 | perte 1.2656 (prédiction 0.3943, sigreg 8.7131) | 197 ex/s | attente des données 50%
+  epoch 1 pas 2 500/4 435 | perte 1.1229 (prédiction 0.3412, sigreg 7.8164) | 221 ex/s | attente des données 45%
+  epoch 1 pas 3 000/4 435 | perte 1.0216 (prédiction 0.3032, sigreg 7.1836) | 241 ex/s | attente des données 41%
+  epoch 1 pas 3 500/4 435 | perte 0.9464 (prédiction 0.2744, sigreg 6.7201) | 257 ex/s | attente des données 37%
+  epoch 1 pas 4 000/4 435 | perte 0.8877 (prédiction 0.2521, sigreg 6.3555) | 271 ex/s | attente des données 34%
+epoch  1/20 | train : perte 0.8457 (prédiction 0.2368, sigreg 6.0886) | val : perte 12.8462 (prédiction 1.9487, sigreg 109.0156) | lr 5.0e-05 | 34.0 min | reste ~10.8 h
+  epoch 2 pas 500/4 435 | perte 0.4492 (prédiction 0.0913, sigreg 3.5792) | 429 ex/s | attente des données 2%
+  epoch 2 pas 1 000/4 435 | perte 0.4433 (prédiction 0.0894, sigreg 3.5384) | 432 ex/s | attente des données 1%
+  epoch 2 pas 1 500/4 435 | perte 0.4377 (prédiction 0.0881, sigreg 3.4962) | 433 ex/s | attente des données 1%
+  epoch 2 pas 2 000/4 435 | perte 0.4323 (prédiction 0.0868, sigreg 3.4550) | 434 ex/s | attente des données 1%
+  epoch 2 pas 2 500/4 435 | perte 0.4275 (prédiction 0.0861, sigreg 3.4149) | 434 ex/s | attente des données 0%
+  epoch 2 pas 3 000/4 435 | perte 0.4233 (prédiction 0.0854, sigreg 3.3795) | 434 ex/s | attente des données 0%
+  epoch 2 pas 3 500/4 435 | perte 0.4194 (prédiction 0.0844, sigreg 3.3497) | 435 ex/s | attente des données 0%
+  epoch 2 pas 4 000/4 435 | perte 0.4156 (prédiction 0.0833, sigreg 3.3231) | 435 ex/s | attente des données 0%
+epoch  2/20 | train : perte 0.4127 (prédiction 0.0825, sigreg 3.3021) | val : perte 13.3860 (prédiction 1.7229, sigreg 116.6484) | lr 4.9e-05 | 22.2 min | reste ~8.4 h
+  epoch 3 pas 500/4 435 | perte 0.3818 (prédiction 0.0738, sigreg 3.0802) | 429 ex/s | attente des données 2%
+  epoch 3 pas 1 000/4 435 | perte 0.3797 (prédiction 0.0729, sigreg 3.0681) | 432 ex/s | attente des données 1%
+  epoch 3 pas 1 500/4 435 | perte 0.3779 (prédiction 0.0722, sigreg 3.0575) | 433 ex/s | attente des données 1%
+  epoch 3 pas 2 000/4 435 | perte 0.3765 (prédiction 0.0717, sigreg 3.0490) | 434 ex/s | attente des données 1%
+  epoch 3 pas 2 500/4 435 | perte 0.3749 (prédiction 0.0711, sigreg 3.0380) | 434 ex/s | attente des données 0%
+  epoch 3 pas 3 000/4 435 | perte 0.3733 (prédiction 0.0708, sigreg 3.0253) | 434 ex/s | attente des données 0%
+  epoch 3 pas 3 500/4 435 | perte 0.3716 (prédiction 0.0702, sigreg 3.0137) | 434 ex/s | attente des données 0%
+  epoch 3 pas 4 000/4 435 | perte 0.3698 (prédiction 0.0696, sigreg 3.0022) | 435 ex/s | attente des données 0%
+epoch  3/20 | train : perte 0.3684 (prédiction 0.0692, sigreg 2.9920) | val : perte 4.6889 (prédiction 0.6195, sigreg 40.6992) | lr 4.8e-05 | 22.2 min | reste ~7.4 h
+  epoch 4 pas 500/4 435 | perte 0.3531 (prédiction 0.0649, sigreg 2.8820) | 431 ex/s | attente des données 1%
+  epoch 4 pas 1 000/4 435 | perte 0.3513 (prédiction 0.0646, sigreg 2.8672) | 433 ex/s | attente des données 1%
+  epoch 4 pas 1 500/4 435 | perte 0.3497 (prédiction 0.0645, sigreg 2.8517) | 434 ex/s | attente des données 1%
+  epoch 4 pas 2 000/4 435 | perte 0.3480 (prédiction 0.0641, sigreg 2.8392) | 434 ex/s | attente des données 0%
+  epoch 4 pas 2 500/4 435 | perte 0.3464 (prédiction 0.0638, sigreg 2.8267) | 434 ex/s | attente des données 0%
+  epoch 4 pas 3 000/4 435 | perte 0.3451 (prédiction 0.0634, sigreg 2.8167) | 435 ex/s | attente des données 0%
+  epoch 4 pas 3 500/4 435 | perte 0.3438 (prédiction 0.0631, sigreg 2.8073) | 435 ex/s | attente des données 0%
+  epoch 4 pas 4 000/4 435 | perte 0.3427 (prédiction 0.0628, sigreg 2.7989) | 435 ex/s | attente des données 0%
+epoch  4/20 | train : perte 0.3417 (prédiction 0.0625, sigreg 2.7922) | val : perte 2.1190 (prédiction 0.4076, sigreg 17.1104) | lr 4.6e-05 | 22.2 min | reste ~6.7 h
+  epoch 5 pas 500/4 435 | perte 0.3301 (prédiction 0.0594, sigreg 2.7079) | 428 ex/s | attente des données 1%
+  epoch 5 pas 1 000/4 435 | perte 0.3287 (prédiction 0.0593, sigreg 2.6938) | 432 ex/s | attente des données 1%
+  epoch 5 pas 1 500/4 435 | perte 0.3273 (prédiction 0.0593, sigreg 2.6806) | 433 ex/s | attente des données 1%
+  epoch 5 pas 2 000/4 435 | perte 0.3260 (prédiction 0.0592, sigreg 2.6681) | 433 ex/s | attente des données 0%
+  epoch 5 pas 2 500/4 435 | perte 0.3246 (prédiction 0.0591, sigreg 2.6551) | 434 ex/s | attente des données 0%
+  epoch 5 pas 3 000/4 435 | perte 0.3232 (prédiction 0.0589, sigreg 2.6432) | 434 ex/s | attente des données 0%
+  epoch 5 pas 3 500/4 435 | perte 0.3219 (prédiction 0.0587, sigreg 2.6328) | 434 ex/s | attente des données 0%
+  epoch 5 pas 4 000/4 435 | perte 0.3207 (prédiction 0.0585, sigreg 2.6225) | 434 ex/s | attente des données 0%
+epoch  5/20 | train : perte 0.3196 (prédiction 0.0583, sigreg 2.6134) | val : perte 3.0355 (prédiction 0.4740, sigreg 25.6055) | lr 4.3e-05 | 22.2 min | reste ~6.1 h
+  epoch 6 pas 500/4 435 | perte 0.3077 (prédiction 0.0558, sigreg 2.5188) | 429 ex/s | attente des données 2%
+  epoch 6 pas 1 000/4 435 | perte 0.3075 (prédiction 0.0562, sigreg 2.5131) | 432 ex/s | attente des données 1%
+  epoch 6 pas 1 500/4 435 | perte 0.3068 (prédiction 0.0561, sigreg 2.5071) | 433 ex/s | attente des données 1%
+  epoch 6 pas 2 000/4 435 | perte 0.3062 (prédiction 0.0560, sigreg 2.5022) | 434 ex/s | attente des données 1%
+  epoch 6 pas 2 500/4 435 | perte 0.3054 (prédiction 0.0557, sigreg 2.4963) | 434 ex/s | attente des données 0%
+  epoch 6 pas 3 000/4 435 | perte 0.3050 (prédiction 0.0556, sigreg 2.4941) | 435 ex/s | attente des données 0%
+  epoch 6 pas 3 500/4 435 | perte 0.3045 (prédiction 0.0554, sigreg 2.4911) | 435 ex/s | attente des données 0%
+  epoch 6 pas 4 000/4 435 | perte 0.3039 (prédiction 0.0551, sigreg 2.4874) | 435 ex/s | attente des données 0%
+epoch  6/20 | train : perte 0.3035 (prédiction 0.0550, sigreg 2.4846) | val : perte 1.9165 (prédiction 0.3508, sigreg 15.6572) | lr 4.0e-05 | 22.2 min | reste ~5.6 h
+  epoch 7 pas 500/4 435 | perte 0.2981 (prédiction 0.0532, sigreg 2.4488) | 430 ex/s | attente des données 1%
+  epoch 7 pas 1 000/4 435 | perte 0.2977 (prédiction 0.0533, sigreg 2.4446) | 433 ex/s | attente des données 1%
+  epoch 7 pas 1 500/4 435 | perte 0.2971 (prédiction 0.0533, sigreg 2.4389) | 434 ex/s | attente des données 1%
+  epoch 7 pas 2 000/4 435 | perte 0.2966 (prédiction 0.0530, sigreg 2.4354) | 434 ex/s | attente des données 0%
+  epoch 7 pas 2 500/4 435 | perte 0.2962 (prédiction 0.0530, sigreg 2.4322) | 435 ex/s | attente des données 0%
+  epoch 7 pas 3 000/4 435 | perte 0.2956 (prédiction 0.0528, sigreg 2.4279) | 435 ex/s | attente des données 0%
+  epoch 7 pas 3 500/4 435 | perte 0.2951 (prédiction 0.0527, sigreg 2.4244) | 435 ex/s | attente des données 0%
+  epoch 7 pas 4 000/4 435 | perte 0.2945 (prédiction 0.0525, sigreg 2.4199) | 435 ex/s | attente des données 0%
+epoch  7/20 | train : perte 0.2940 (prédiction 0.0524, sigreg 2.4166) | val : perte 1.3175 (prédiction 0.2476, sigreg 10.6914) | lr 3.7e-05 | 22.0 min | reste ~5.2 h
+  epoch 8 pas 500/4 435 | perte 0.2883 (prédiction 0.0510, sigreg 2.3729) | 429 ex/s | attente des données 2%
+  epoch 8 pas 1 000/4 435 | perte 0.2880 (prédiction 0.0508, sigreg 2.3717) | 433 ex/s | attente des données 1%
+  epoch 8 pas 1 500/4 435 | perte 0.2878 (prédiction 0.0509, sigreg 2.3693) | 434 ex/s | attente des données 1%
+  epoch 8 pas 2 000/4 435 | perte 0.2877 (prédiction 0.0509, sigreg 2.3680) | 434 ex/s | attente des données 1%
+  epoch 8 pas 2 500/4 435 | perte 0.2872 (prédiction 0.0507, sigreg 2.3647) | 434 ex/s | attente des données 0%
+  epoch 8 pas 3 000/4 435 | perte 0.2867 (prédiction 0.0506, sigreg 2.3612) | 434 ex/s | attente des données 0%
+  epoch 8 pas 3 500/4 435 | perte 0.2862 (prédiction 0.0504, sigreg 2.3578) | 435 ex/s | attente des données 0%
+  epoch 8 pas 4 000/4 435 | perte 0.2858 (prédiction 0.0504, sigreg 2.3547) | 435 ex/s | attente des données 0%
+epoch  8/20 | train : perte 0.2854 (prédiction 0.0503, sigreg 2.3510) | val : perte 0.6563 (prédiction 0.1073, sigreg 5.4888) | lr 3.3e-05 | 22.2 min | reste ~4.7 h
+  epoch 9 pas 500/4 435 | perte 0.2811 (prédiction 0.0492, sigreg 2.3187) | 428 ex/s | attente des données 2%
+  epoch 9 pas 1 000/4 435 | perte 0.2812 (prédiction 0.0494, sigreg 2.3184) | 432 ex/s | attente des données 1%
+  epoch 9 pas 1 500/4 435 | perte 0.2807 (prédiction 0.0492, sigreg 2.3147) | 432 ex/s | attente des données 1%
+  epoch 9 pas 2 000/4 435 | perte 0.2803 (prédiction 0.0491, sigreg 2.3116) | 433 ex/s | attente des données 1%
+  epoch 9 pas 2 500/4 435 | perte 0.2799 (prédiction 0.0490, sigreg 2.3097) | 434 ex/s | attente des données 0%
+  epoch 9 pas 3 000/4 435 | perte 0.2795 (prédiction 0.0488, sigreg 2.3061) | 434 ex/s | attente des données 0%
+  epoch 9 pas 3 500/4 435 | perte 0.2791 (prédiction 0.0488, sigreg 2.3033) | 434 ex/s | attente des données 0%
+  epoch 9 pas 4 000/4 435 | perte 0.2788 (prédiction 0.0488, sigreg 2.2998) | 435 ex/s | attente des données 0%
+epoch  9/20 | train : perte 0.2784 (prédiction 0.0487, sigreg 2.2967) | val : perte 0.5002 (prédiction 0.0911, sigreg 4.0908) | lr 2.9e-05 | 22.2 min | reste ~4.3 h
+  epoch 10 pas 500/4 435 | perte 0.2750 (prédiction 0.0478, sigreg 2.2717) | 428 ex/s | attente des données 2%
+  epoch 10 pas 1 000/4 435 | perte 0.2746 (prédiction 0.0478, sigreg 2.2683) | 431 ex/s | attente des données 1%
+  epoch 10 pas 1 500/4 435 | perte 0.2743 (prédiction 0.0478, sigreg 2.2656) | 433 ex/s | attente des données 1%
+  epoch 10 pas 2 000/4 435 | perte 0.2739 (prédiction 0.0476, sigreg 2.2629) | 433 ex/s | attente des données 1%
+  epoch 10 pas 2 500/4 435 | perte 0.2736 (prédiction 0.0475, sigreg 2.2612) | 434 ex/s | attente des données 1%
+  epoch 10 pas 3 000/4 435 | perte 0.2735 (prédiction 0.0475, sigreg 2.2595) | 434 ex/s | attente des données 0%
+  epoch 10 pas 3 500/4 435 | perte 0.2732 (prédiction 0.0475, sigreg 2.2566) | 434 ex/s | attente des données 0%
+  epoch 10 pas 4 000/4 435 | perte 0.2729 (prédiction 0.0475, sigreg 2.2539) | 434 ex/s | attente des données 0%
+epoch 10/20 | train : perte 0.2727 (prédiction 0.0475, sigreg 2.2513) | val : perte 0.4262 (prédiction 0.0671, sigreg 3.5894) | lr 2.5e-05 | 22.2 min | reste ~3.9 h
+  epoch 11 pas 500/4 435 | perte 0.2694 (prédiction 0.0469, sigreg 2.2243) | 430 ex/s | attente des données 2%
+  epoch 11 pas 1 000/4 435 | perte 0.2684 (prédiction 0.0466, sigreg 2.2173) | 433 ex/s | attente des données 1%
+  epoch 11 pas 1 500/4 435 | perte 0.2681 (prédiction 0.0466, sigreg 2.2145) | 434 ex/s | attente des données 1%
+  epoch 11 pas 2 000/4 435 | perte 0.2676 (prédiction 0.0465, sigreg 2.2108) | 430 ex/s | attente des données 1%
+  epoch 11 pas 2 500/4 435 | perte 0.2673 (prédiction 0.0465, sigreg 2.2085) | 432 ex/s | attente des données 1%
+  epoch 11 pas 3 000/4 435 | perte 0.2670 (prédiction 0.0464, sigreg 2.2059) | 432 ex/s | attente des données 1%
+  epoch 11 pas 3 500/4 435 | perte 0.2668 (prédiction 0.0464, sigreg 2.2046) | 433 ex/s | attente des données 1%
+  epoch 11 pas 4 000/4 435 | perte 0.2665 (prédiction 0.0463, sigreg 2.2027) | 433 ex/s | attente des données 1%
+epoch 11/20 | train : perte 0.2663 (prédiction 0.0462, sigreg 2.2008) | val : perte 0.3146 (prédiction 0.0375, sigreg 2.7712) | lr 2.1e-05 | 22.3 min | reste ~3.5 h
+  epoch 12 pas 500/4 435 | perte 0.2627 (prédiction 0.0452, sigreg 2.1755) | 429 ex/s | attente des données 2%
+  epoch 12 pas 1 000/4 435 | perte 0.2622 (prédiction 0.0448, sigreg 2.1738) | 432 ex/s | attente des données 1%
+  epoch 12 pas 1 500/4 435 | perte 0.2626 (prédiction 0.0448, sigreg 2.1777) | 433 ex/s | attente des données 1%
+  epoch 12 pas 2 000/4 435 | perte 0.2624 (prédiction 0.0447, sigreg 2.1778) | 434 ex/s | attente des données 0%
+  epoch 12 pas 2 500/4 435 | perte 0.2624 (prédiction 0.0448, sigreg 2.1762) | 434 ex/s | attente des données 0%
+  epoch 12 pas 3 000/4 435 | perte 0.2623 (prédiction 0.0447, sigreg 2.1761) | 434 ex/s | attente des données 0%
+  epoch 12 pas 3 500/4 435 | perte 0.2621 (prédiction 0.0446, sigreg 2.1749) | 434 ex/s | attente des données 0%
+  epoch 12 pas 4 000/4 435 | perte 0.2620 (prédiction 0.0446, sigreg 2.1740) | 434 ex/s | attente des données 0%
+epoch 12/20 | train : perte 0.2617 (prédiction 0.0445, sigreg 2.1724) | val : perte 0.3809 (prédiction 0.0508, sigreg 3.3022) | lr 1.8e-05 | 22.2 min | reste ~3.1 h
+  epoch 13 pas 500/4 435 | perte 0.2600 (prédiction 0.0435, sigreg 2.1646) | 430 ex/s | attente des données 1%
+  epoch 13 pas 1 000/4 435 | perte 0.2594 (prédiction 0.0435, sigreg 2.1593) | 433 ex/s | attente des données 1%
+  epoch 13 pas 1 500/4 435 | perte 0.2593 (prédiction 0.0436, sigreg 2.1575) | 434 ex/s | attente des données 1%
+  epoch 13 pas 2 000/4 435 | perte 0.2593 (prédiction 0.0436, sigreg 2.1571) | 434 ex/s | attente des données 0%
+  epoch 13 pas 2 500/4 435 | perte 0.2588 (prédiction 0.0434, sigreg 2.1542) | 434 ex/s | attente des données 0%
+  epoch 13 pas 3 000/4 435 | perte 0.2587 (prédiction 0.0434, sigreg 2.1528) | 434 ex/s | attente des données 0%
+  epoch 13 pas 3 500/4 435 | perte 0.2585 (prédiction 0.0433, sigreg 2.1516) | 434 ex/s | attente des données 0%
+  epoch 13 pas 4 000/4 435 | perte 0.2583 (prédiction 0.0432, sigreg 2.1503) | 434 ex/s | attente des données 0%
+epoch 13/20 | train : perte 0.2582 (prédiction 0.0432, sigreg 2.1496) | val : perte 0.3477 (prédiction 0.0488, sigreg 2.9893) | lr 1.4e-05 | 22.1 min | reste ~2.7 h
+  epoch 14 pas 500/4 435 | perte 0.2570 (prédiction 0.0426, sigreg 2.1450) | 429 ex/s | attente des données 2%
+  epoch 14 pas 1 000/4 435 | perte 0.2564 (prédiction 0.0422, sigreg 2.1423) | 432 ex/s | attente des données 1%
+  epoch 14 pas 1 500/4 435 | perte 0.2562 (prédiction 0.0422, sigreg 2.1409) | 433 ex/s | attente des données 1%
+  epoch 14 pas 2 000/4 435 | perte 0.2562 (prédiction 0.0421, sigreg 2.1407) | 433 ex/s | attente des données 1%
+  epoch 14 pas 2 500/4 435 | perte 0.2560 (prédiction 0.0421, sigreg 2.1391) | 434 ex/s | attente des données 0%
+  epoch 14 pas 3 000/4 435 | perte 0.2557 (prédiction 0.0420, sigreg 2.1378) | 434 ex/s | attente des données 0%
+  epoch 14 pas 3 500/4 435 | perte 0.2556 (prédiction 0.0420, sigreg 2.1368) | 434 ex/s | attente des données 0%
+  epoch 14 pas 4 000/4 435 | perte 0.2555 (prédiction 0.0419, sigreg 2.1359) | 434 ex/s | attente des données 0%
+epoch 14/20 | train : perte 0.2555 (prédiction 0.0419, sigreg 2.1356) | val : perte 0.2765 (prédiction 0.0287, sigreg 2.4775) | lr 1.0e-05 | 22.2 min | reste ~2.3 h
+  epoch 15 pas 500/4 435 | perte 0.2543 (prédiction 0.0413, sigreg 2.1299) | 430 ex/s | attente des données 1%
+  epoch 15 pas 1 000/4 435 | perte 0.2538 (prédiction 0.0412, sigreg 2.1269) | 432 ex/s | attente des données 1%
+  epoch 15 pas 1 500/4 435 | perte 0.2538 (prédiction 0.0411, sigreg 2.1262) | 433 ex/s | attente des données 1%
+  epoch 15 pas 2 000/4 435 | perte 0.2535 (prédiction 0.0410, sigreg 2.1250) | 434 ex/s | attente des données 0%
+  epoch 15 pas 2 500/4 435 | perte 0.2533 (prédiction 0.0409, sigreg 2.1241) | 434 ex/s | attente des données 0%
+  epoch 15 pas 3 000/4 435 | perte 0.2532 (prédiction 0.0409, sigreg 2.1236) | 434 ex/s | attente des données 0%
+  epoch 15 pas 3 500/4 435 | perte 0.2532 (prédiction 0.0409, sigreg 2.1236) | 435 ex/s | attente des données 0%
+  epoch 15 pas 4 000/4 435 | perte 0.2531 (prédiction 0.0408, sigreg 2.1234) | 435 ex/s | attente des données 0%
+epoch 15/20 | train : perte 0.2530 (prédiction 0.0407, sigreg 2.1231) | val : perte 0.2650 (prédiction 0.0249, sigreg 2.4004) | lr 7.5e-06 | 22.0 min | reste ~1.9 h
+  epoch 16 pas 500/4 435 | perte 0.2512 (prédiction 0.0397, sigreg 2.1161) | 428 ex/s | attente des données 1%
+  epoch 16 pas 1 000/4 435 | perte 0.2514 (prédiction 0.0397, sigreg 2.1167) | 432 ex/s | attente des données 1%
+  epoch 16 pas 1 500/4 435 | perte 0.2514 (prédiction 0.0399, sigreg 2.1152) | 433 ex/s | attente des données 1%
+  epoch 16 pas 2 000/4 435 | perte 0.2511 (prédiction 0.0398, sigreg 2.1129) | 433 ex/s | attente des données 0%
+  epoch 16 pas 2 500/4 435 | perte 0.2512 (prédiction 0.0398, sigreg 2.1138) | 434 ex/s | attente des données 0%
+  epoch 16 pas 3 000/4 435 | perte 0.2513 (prédiction 0.0398, sigreg 2.1144) | 434 ex/s | attente des données 0%
+  epoch 16 pas 3 500/4 435 | perte 0.2513 (prédiction 0.0399, sigreg 2.1141) | 434 ex/s | attente des données 0%
+  epoch 16 pas 4 000/4 435 | perte 0.2511 (prédiction 0.0398, sigreg 2.1125) | 434 ex/s | attente des données 0%
+epoch 16/20 | train : perte 0.2510 (prédiction 0.0398, sigreg 2.1124) | val : perte 0.2608 (prédiction 0.0225, sigreg 2.3826) | lr 4.9e-06 | 22.2 min | reste ~1.5 h
+  epoch 17 pas 500/4 435 | perte 0.2494 (prédiction 0.0390, sigreg 2.1043) | 429 ex/s | attente des données 2%
+  epoch 17 pas 1 000/4 435 | perte 0.2501 (prédiction 0.0391, sigreg 2.1097) | 432 ex/s | attente des données 1%
+  epoch 17 pas 1 500/4 435 | perte 0.2494 (prédiction 0.0390, sigreg 2.1037) | 433 ex/s | attente des données 1%
+  epoch 17 pas 2 000/4 435 | perte 0.2493 (prédiction 0.0391, sigreg 2.1018) | 434 ex/s | attente des données 1%
+  epoch 17 pas 2 500/4 435 | perte 0.2494 (prédiction 0.0391, sigreg 2.1024) | 434 ex/s | attente des données 0%
+  epoch 17 pas 3 000/4 435 | perte 0.2493 (prédiction 0.0391, sigreg 2.1023) | 434 ex/s | attente des données 0%
+  epoch 17 pas 3 500/4 435 | perte 0.2494 (prédiction 0.0391, sigreg 2.1033) | 434 ex/s | attente des données 0%
+  epoch 17 pas 4 000/4 435 | perte 0.2494 (prédiction 0.0391, sigreg 2.1037) | 434 ex/s | attente des données 0%
+epoch 17/20 | train : perte 0.2494 (prédiction 0.0390, sigreg 2.1036) | val : perte 0.2509 (prédiction 0.0202, sigreg 2.3076) | lr 2.8e-06 | 22.2 min | reste ~1.1 h
+  epoch 18 pas 500/4 435 | perte 0.2491 (prédiction 0.0389, sigreg 2.1024) | 430 ex/s | attente des données 1%
+  epoch 18 pas 1 000/4 435 | perte 0.2489 (prédiction 0.0388, sigreg 2.1015) | 433 ex/s | attente des données 1%
+  epoch 18 pas 1 500/4 435 | perte 0.2488 (prédiction 0.0387, sigreg 2.1007) | 434 ex/s | attente des données 1%
+  epoch 18 pas 2 000/4 435 | perte 0.2488 (prédiction 0.0387, sigreg 2.1014) | 434 ex/s | attente des données 0%
+  epoch 18 pas 2 500/4 435 | perte 0.2487 (prédiction 0.0386, sigreg 2.1007) | 435 ex/s | attente des données 0%
+  epoch 18 pas 3 000/4 435 | perte 0.2486 (prédiction 0.0385, sigreg 2.1007) | 435 ex/s | attente des données 0%
+  epoch 18 pas 3 500/4 435 | perte 0.2486 (prédiction 0.0385, sigreg 2.1005) | 435 ex/s | attente des données 0%
+  epoch 18 pas 4 000/4 435 | perte 0.2485 (prédiction 0.0385, sigreg 2.1001) | 435 ex/s | attente des données 0%
+epoch 18/20 | train : perte 0.2484 (prédiction 0.0385, sigreg 2.0994) | val : perte 0.2499 (prédiction 0.0192, sigreg 2.3071) | lr 1.2e-06 | 22.3 min | reste ~0.8 h
+  epoch 19 pas 500/4 435 | perte 0.2488 (prédiction 0.0383, sigreg 2.1048) | 429 ex/s | attente des données 2%
+  epoch 19 pas 1 000/4 435 | perte 0.2481 (prédiction 0.0383, sigreg 2.0976) | 432 ex/s | attente des données 1%
+  epoch 19 pas 1 500/4 435 | perte 0.2481 (prédiction 0.0383, sigreg 2.0981) | 434 ex/s | attente des données 1%
+  epoch 19 pas 2 000/4 435 | perte 0.2480 (prédiction 0.0382, sigreg 2.0977) | 434 ex/s | attente des données 1%
+  epoch 19 pas 2 500/4 435 | perte 0.2480 (prédiction 0.0382, sigreg 2.0981) | 434 ex/s | attente des données 0%
+  epoch 19 pas 3 000/4 435 | perte 0.2480 (prédiction 0.0382, sigreg 2.0979) | 434 ex/s | attente des données 0%
+  epoch 19 pas 3 500/4 435 | perte 0.2480 (prédiction 0.0382, sigreg 2.0977) | 434 ex/s | attente des données 0%
+  epoch 19 pas 4 000/4 435 | perte 0.2479 (prédiction 0.0381, sigreg 2.0977) | 434 ex/s | attente des données 0%
+epoch 19/20 | train : perte 0.2478 (prédiction 0.0381, sigreg 2.0973) | val : perte 0.2467 (prédiction 0.0188, sigreg 2.2791) | lr 3.1e-07 | 22.2 min | reste ~0.4 h
+  epoch 20 pas 500/4 435 | perte 0.2474 (prédiction 0.0378, sigreg 2.0959) | 430 ex/s | attente des données 2%
+  epoch 20 pas 1 000/4 435 | perte 0.2471 (prédiction 0.0378, sigreg 2.0931) | 433 ex/s | attente des données 1%
+  epoch 20 pas 1 500/4 435 | perte 0.2473 (prédiction 0.0379, sigreg 2.0944) | 433 ex/s | attente des données 1%
+  epoch 20 pas 2 000/4 435 | perte 0.2476 (prédiction 0.0379, sigreg 2.0969) | 434 ex/s | attente des données 1%
+  epoch 20 pas 2 500/4 435 | perte 0.2476 (prédiction 0.0378, sigreg 2.0975) | 434 ex/s | attente des données 0%
+  epoch 20 pas 3 000/4 435 | perte 0.2475 (prédiction 0.0379, sigreg 2.0960) | 434 ex/s | attente des données 0%
+  epoch 20 pas 3 500/4 435 | perte 0.2474 (prédiction 0.0378, sigreg 2.0957) | 435 ex/s | attente des données 0%
+  epoch 20 pas 4 000/4 435 | perte 0.2474 (prédiction 0.0378, sigreg 2.0962) | 435 ex/s | attente des données 0%
+epoch 20/20 | train : perte 0.2475 (prédiction 0.0378, sigreg 2.0965) | val : perte 0.2467 (prédiction 0.0188, sigreg 2.2783) | lr 0.0e+00 | 22.1 min | reste ~0.0 h
+Terminé en 7.6 h. Poids : /workspace/stable-wm/checkpoints/joint_det-tworoom-e2e-reacherconfig

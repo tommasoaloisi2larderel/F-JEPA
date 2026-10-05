@@ -17,3 +17,4 @@ stable-wm/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+*.pt

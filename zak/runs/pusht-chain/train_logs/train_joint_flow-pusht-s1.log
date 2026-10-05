@@ -1,0 +1,24 @@
+Étape 1 : vecteurs déjà calculés, relus depuis /workspace/stable-wm/cache/pusht_lewm_emb.pt
+torch.compile : 44.1 ms par pas sans, 21.3 ms avec -> activé
+joint_flow-pusht-s1 : modèle joint_flow, pusht, graine 1 | 1 794 871 exemples (1 615 384 train, 179 487 val), 12 620 pas par epoch, 20 epochs
+epoch  1/20 | perte train 0.3641 | perte val 0.2025 | lr 5.0e-05 | 7.1 min | reste ~136 min
+epoch  2/20 | perte train 0.1691 | perte val 0.1474 | lr 4.9e-05 | 7.4 min | reste ~131 min
+epoch  3/20 | perte train 0.1360 | perte val 0.1271 | lr 4.8e-05 | 7.6 min | reste ~126 min
+epoch  4/20 | perte train 0.1212 | perte val 0.1166 | lr 4.6e-05 | 7.4 min | reste ~118 min
+epoch  5/20 | perte train 0.1121 | perte val 0.1098 | lr 4.3e-05 | 7.0 min | reste ~110 min
+epoch  6/20 | perte train 0.1061 | perte val 0.1034 | lr 4.0e-05 | 7.1 min | reste ~102 min
+epoch  7/20 | perte train 0.1018 | perte val 0.1001 | lr 3.7e-05 | 6.9 min | reste ~94 min
+epoch  8/20 | perte train 0.0978 | perte val 0.0961 | lr 3.3e-05 | 7.3 min | reste ~87 min
+epoch  9/20 | perte train 0.0948 | perte val 0.0935 | lr 2.9e-05 | 6.8 min | reste ~79 min
+epoch 10/20 | perte train 0.0922 | perte val 0.0915 | lr 2.5e-05 | 6.9 min | reste ~72 min
+epoch 11/20 | perte train 0.0901 | perte val 0.0892 | lr 2.1e-05 | 6.8 min | reste ~64 min
+epoch 12/20 | perte train 0.0880 | perte val 0.0873 | lr 1.8e-05 | 7.0 min | reste ~57 min
+epoch 13/20 | perte train 0.0864 | perte val 0.0858 | lr 1.4e-05 | 6.9 min | reste ~50 min
+epoch 14/20 | perte train 0.0851 | perte val 0.0846 | lr 1.0e-05 | 6.9 min | reste ~43 min
+epoch 15/20 | perte train 0.0840 | perte val 0.0837 | lr 7.5e-06 | 6.8 min | reste ~35 min
+epoch 16/20 | perte train 0.0830 | perte val 0.0829 | lr 4.9e-06 | 6.7 min | reste ~28 min
+epoch 17/20 | perte train 0.0822 | perte val 0.0823 | lr 2.8e-06 | 6.9 min | reste ~21 min
+epoch 18/20 | perte train 0.0816 | perte val 0.0818 | lr 1.2e-06 | 7.2 min | reste ~14 min
+epoch 19/20 | perte train 0.0813 | perte val 0.0814 | lr 3.1e-07 | 6.9 min | reste ~7 min
+epoch 20/20 | perte train 0.0811 | perte val 0.0813 | lr 0.0e+00 | 6.9 min | reste ~0 min
+Terminé en 141 min. Poids : /workspace/stable-wm/checkpoints/joint_flow-pusht-s1

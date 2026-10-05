@@ -1,0 +1,24 @@
+Étape 1 : vecteurs déjà calculés, relus depuis /workspace/stable-wm/cache/pusht_lewm_emb.pt
+torch.compile : 35.1 ms par pas sans, 16.3 ms avec -> activé
+lewm-pusht-s0 : modèle lewm, pusht, graine 0 | 1 981 721 exemples (1 783 549 train, 198 172 val), 13 933 pas par epoch, 20 epochs
+epoch  1/20 | perte train 0.0931 | perte val 0.0094 | lr 5.0e-05 | 5.9 min | reste ~113 min
+epoch  2/20 | perte train 0.0196 | perte val 0.0066 | lr 4.9e-05 | 6.0 min | reste ~108 min
+epoch  3/20 | perte train 0.0166 | perte val 0.0055 | lr 4.8e-05 | 6.2 min | reste ~103 min
+epoch  4/20 | perte train 0.0151 | perte val 0.0049 | lr 4.6e-05 | 6.1 min | reste ~97 min
+epoch  5/20 | perte train 0.0142 | perte val 0.0045 | lr 4.3e-05 | 6.0 min | reste ~91 min
+epoch  6/20 | perte train 0.0135 | perte val 0.0041 | lr 4.0e-05 | 5.8 min | reste ~84 min
+epoch  7/20 | perte train 0.0129 | perte val 0.0040 | lr 3.7e-05 | 5.8 min | reste ~78 min
+epoch  8/20 | perte train 0.0125 | perte val 0.0037 | lr 3.3e-05 | 6.0 min | reste ~72 min
+epoch  9/20 | perte train 0.0121 | perte val 0.0035 | lr 2.9e-05 | 5.8 min | reste ~66 min
+epoch 10/20 | perte train 0.0117 | perte val 0.0034 | lr 2.5e-05 | 6.1 min | reste ~60 min
+epoch 11/20 | perte train 0.0114 | perte val 0.0033 | lr 2.1e-05 | 5.8 min | reste ~54 min
+epoch 12/20 | perte train 0.0111 | perte val 0.0031 | lr 1.8e-05 | 5.7 min | reste ~48 min
+epoch 13/20 | perte train 0.0109 | perte val 0.0031 | lr 1.4e-05 | 5.8 min | reste ~42 min
+epoch 14/20 | perte train 0.0107 | perte val 0.0030 | lr 1.0e-05 | 5.8 min | reste ~36 min
+epoch 15/20 | perte train 0.0106 | perte val 0.0031 | lr 7.5e-06 | 5.9 min | reste ~30 min
+epoch 16/20 | perte train 0.0104 | perte val 0.0030 | lr 4.9e-06 | 5.8 min | reste ~24 min
+epoch 17/20 | perte train 0.0104 | perte val 0.0030 | lr 2.8e-06 | 5.8 min | reste ~18 min
+epoch 18/20 | perte train 0.0103 | perte val 0.0030 | lr 1.2e-06 | 5.8 min | reste ~12 min
+epoch 19/20 | perte train 0.0102 | perte val 0.0030 | lr 3.1e-07 | 5.8 min | reste ~6 min
+epoch 20/20 | perte train 0.0102 | perte val 0.0030 | lr 0.0e+00 | 5.7 min | reste ~0 min
+Terminé en 118 min. Poids : /workspace/stable-wm/checkpoints/lewm-pusht-s0

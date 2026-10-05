@@ -1,0 +1,24 @@
+Étape 1 : vecteurs déjà calculés, relus depuis /workspace/stable-wm/cache/pusht_lewm_emb.pt
+torch.compile : 46.0 ms par pas sans, 17.2 ms avec -> activé
+ar_flow-pusht-s0 : modèle ar_flow, pusht, graine 0 | 1 794 871 exemples (1 615 384 train, 179 487 val), 12 620 pas par epoch, 20 epochs
+epoch  1/20 | perte train 0.1751 | perte val 0.0925 | lr 5.0e-05 | 6.6 min | reste ~125 min
+epoch  2/20 | perte train 0.0791 | perte val 0.0706 | lr 4.9e-05 | 6.7 min | reste ~120 min
+epoch  3/20 | perte train 0.0657 | perte val 0.0623 | lr 4.8e-05 | 6.7 min | reste ~113 min
+epoch  4/20 | perte train 0.0597 | perte val 0.0577 | lr 4.6e-05 | 6.8 min | reste ~107 min
+epoch  5/20 | perte train 0.0558 | perte val 0.0540 | lr 4.3e-05 | 6.6 min | reste ~100 min
+epoch  6/20 | perte train 0.0528 | perte val 0.0518 | lr 4.0e-05 | 6.7 min | reste ~94 min
+epoch  7/20 | perte train 0.0507 | perte val 0.0500 | lr 3.7e-05 | 6.8 min | reste ~87 min
+epoch  8/20 | perte train 0.0492 | perte val 0.0487 | lr 3.3e-05 | 6.5 min | reste ~80 min
+epoch  9/20 | perte train 0.0479 | perte val 0.0473 | lr 2.9e-05 | 6.6 min | reste ~73 min
+epoch 10/20 | perte train 0.0468 | perte val 0.0465 | lr 2.5e-05 | 6.5 min | reste ~67 min
+epoch 11/20 | perte train 0.0458 | perte val 0.0456 | lr 2.1e-05 | 6.3 min | reste ~60 min
+epoch 12/20 | perte train 0.0450 | perte val 0.0448 | lr 1.8e-05 | 6.4 min | reste ~53 min
+epoch 13/20 | perte train 0.0442 | perte val 0.0442 | lr 1.4e-05 | 6.4 min | reste ~46 min
+epoch 14/20 | perte train 0.0436 | perte val 0.0435 | lr 1.0e-05 | 6.3 min | reste ~39 min
+epoch 15/20 | perte train 0.0431 | perte val 0.0430 | lr 7.5e-06 | 6.2 min | reste ~33 min
+epoch 16/20 | perte train 0.0426 | perte val 0.0426 | lr 4.9e-06 | 6.2 min | reste ~26 min
+epoch 17/20 | perte train 0.0423 | perte val 0.0423 | lr 2.8e-06 | 6.3 min | reste ~20 min
+epoch 18/20 | perte train 0.0420 | perte val 0.0421 | lr 1.2e-06 | 6.4 min | reste ~13 min
+epoch 19/20 | perte train 0.0418 | perte val 0.0420 | lr 3.1e-07 | 6.7 min | reste ~7 min
+epoch 20/20 | perte train 0.0417 | perte val 0.0419 | lr 0.0e+00 | 6.4 min | reste ~0 min
+Terminé en 130 min. Poids : /workspace/stable-wm/checkpoints/ar_flow-pusht-s0

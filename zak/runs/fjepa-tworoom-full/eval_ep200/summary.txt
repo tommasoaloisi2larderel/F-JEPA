@@ -1,0 +1,6 @@
+== Résumé : taux de succès en %, sur 200 épisodes (fjepa-tworoom-full), en 20 min
+random       24.5
+lewm_clean   85.0
+lewm_noise   79.5
+fjepa_clean  95.5
+fjepa_noise  63.0
