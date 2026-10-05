@@ -31,11 +31,12 @@ if [ ! -d .venv ]; then
   uv venv --python=3.10
 fi
 source .venv/bin/activate
-uv pip install "stable-worldmodel[train,env,format]" huggingface_hub
-uv pip install "datasets==2.19.2" "pyarrow==20.0.0"
+uv pip install --python .venv/bin/python "stable-worldmodel[train,format]" huggingface_hub
+uv pip install --python .venv/bin/python "datasets==2.19.2" "pyarrow==20.0.0"
 
 cd "$FJEPA_ROOT"
 ./download_dataset.sh tworoom
 
 cd Flow-JEPA
-python train.py --config-name tworoom_transition_rollout2 "$@"
+export MPLBACKEND=Agg
+.venv/bin/python train.py --config-name tworoom_transition_rollout2 "$@"
