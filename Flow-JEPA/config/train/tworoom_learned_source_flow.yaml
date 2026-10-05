@@ -1,0 +1,34 @@
+defaults:
+  - fjepa
+  - override /data: tworoom
+  - _self_
+
+output_model_name: flow-jepa-tworoom-learned-source-flow
+
+flow_matching:
+  source: noisy_current
+  source_noise_scale: 1.0
+
+model:
+  objective: learned_source_flow
+  learned_source_loss_weight: 0.1
+  learned_source_min_scale: 0.01
+  learned_source_max_scale: 1.0
+  predictor:
+    causal_self_attention: true
+    dropout: 0.0
+  source_predictor:
+    _target_: module.FlowTrajectoryPredictor
+    input_dim: ${embed_dim}
+    hidden_dim: ${embed_dim}
+    action_dim: ${embed_dim}
+    output_dim: ${eval:'2 * ${embed_dim}'}
+    output_proj_hidden_dim: 768
+    causal_self_attention: true
+    depth: 6
+    heads: 16
+    mlp_dim: 2048
+    dim_head: 64
+    dropout: 0.0
+    emb_dropout: 0.0
+

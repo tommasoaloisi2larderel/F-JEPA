@@ -1,7 +1,14 @@
 _target_: jepa.JEPA
+objective: flow
 num_flow_steps: ${num_flow_steps}
 flow_source: ${flow_matching.source}
 flow_source_noise_scale: ${flow_matching.source_noise_scale}
+residual_base_loss_weight: 1.0
+learned_source_loss_weight: 0.1
+learned_source_min_scale: 0.01
+learned_source_max_scale: 2.0
+rollout_loss_weight: 1.0
+rollout_horizon: 2
 freeze_encoder: false
 freeze_projector: false
 
@@ -43,3 +50,5 @@ projector:
     _partial_: true
 
 pred_proj: null
+base_predictor: null
+source_predictor: null

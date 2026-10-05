@@ -1,0 +1,15 @@
+defaults:
+  - pusht_paper
+  - _self_
+
+output_model_name: flow-jepa-pusht-smoke
+
+# Same Push-T paper setup, but a very short billable run.
+trainer:
+  max_epochs: 1
+  limit_train_batches: 20
+  limit_val_batches: 5
+  num_sanity_val_steps: 0
+
+normalization:
+  enabled: false

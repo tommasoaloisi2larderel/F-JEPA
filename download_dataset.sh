@@ -4,7 +4,7 @@ set -euo pipefail
 source "$(dirname "$0")/env.sh"
 
 DATASET="${1:-}"
-DATASET_DIR="$STABLEWM_HOME"
+DATASET_DIR="$STABLEWM_HOME/datasets"
 
 usage() {
   cat <<'EOF'
@@ -24,12 +24,25 @@ download_tworoom() {
   local out="$DATASET_DIR/tworoom.h5"
   [[ -f "$out" ]] && { echo "Already present: $out"; return; }
   curl -L "https://huggingface.co/datasets/quentinll/lewm-tworooms/resolve/main/tworoom.tar.zst" \
-    | tar --zstd -xvf - -C "$DATASET_DIR"
+    | tar --zstd --no-same-owner -xvf - -C "$DATASET_DIR"
 }
 
 download_pusht() {
   local out="$DATASET_DIR/pusht_expert_train.h5"
-  [[ -f "$out" ]] && { echo "Already present: $out"; return; }
+  if [[ -f "$out" ]]; then
+    if python - "$out" <<'PY'
+import h5py
+import sys
+
+with h5py.File(sys.argv[1], "r") as handle:
+    print("Already present:", sys.argv[1], "keys=", list(handle.keys())[:8])
+PY
+    then
+      return
+    fi
+    echo "Removing incomplete/corrupt file: $out" >&2
+    rm -f "$out"
+  fi
   curl -L "https://huggingface.co/datasets/quentinll/lewm-pusht/resolve/main/pusht_expert_train.h5.zst" \
     | zstd -d -o "$out"
 }
@@ -38,14 +51,14 @@ download_reacher() {
   local out="$DATASET_DIR/reacher.h5"
   [[ -f "$out" ]] && { echo "Already present: $out"; return; }
   curl -L "https://huggingface.co/datasets/quentinll/lewm-reacher/resolve/main/reacher.tar.zst" \
-    | tar --zstd -xvf - -C "$DATASET_DIR"
+    | tar --zstd --no-same-owner -xvf - -C "$DATASET_DIR"
 }
 
 download_cube() {
   local out="$DATASET_DIR/cube_single_expert.h5"
   [[ -f "$out" ]] && { echo "Already present: $out"; return; }
   curl -L "https://huggingface.co/datasets/quentinll/lewm-cube/resolve/main/cube_single_expert.tar.zst" \
-    | tar --zstd -xvf - -C "$DATASET_DIR"
+    | tar --zstd --no-same-owner -xvf - -C "$DATASET_DIR"
 }
 
 mkdir -p "$DATASET_DIR"

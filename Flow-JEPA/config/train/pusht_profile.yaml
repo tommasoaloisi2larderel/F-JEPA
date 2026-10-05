@@ -1,0 +1,17 @@
+defaults:
+  - pusht_paper
+  - _self_
+
+output_model_name: flow-jepa-pusht-profile
+
+trainer:
+  max_epochs: 1
+  limit_train_batches: 120
+  limit_val_batches: 20
+  num_sanity_val_steps: 0
+  log_every_n_steps: 5
+
+timing:
+  enabled: true
+  every_n_steps: 5
+  filename: timing.csv

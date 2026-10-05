@@ -11,7 +11,14 @@ from lightning.pytorch.loggers import WandbLogger
 from omegaconf import OmegaConf, open_dict
 
 from module import SIGReg
-from utils import get_column_normalizer, get_img_preprocessor, SaveCkptCallback
+from utils import (
+    ThroughputProfilerCallback,
+    SaveCkptCallback,
+    get_column_normalizer,
+    get_img_preprocessor,
+)
+
+torch.set_float32_matmul_precision("high")
 
 
 def initialize_visual_encoder_from_checkpoint(
@@ -22,6 +29,25 @@ def initialize_visual_encoder_from_checkpoint(
     strict=True,
 ):
     """Load the visual latent coordinate system from a pretrained model."""
+
+    def normalize_vit_encoder_keys(state):
+        replacements = (
+            ("encoder.layer.", "layers."),
+            ("attention.attention.query.", "attention.q_proj."),
+            ("attention.attention.key.", "attention.k_proj."),
+            ("attention.attention.value.", "attention.v_proj."),
+            ("attention.output.dense.", "attention.o_proj."),
+            ("intermediate.dense.", "mlp.fc1."),
+            ("output.dense.", "mlp.fc2."),
+        )
+        normalized = {}
+        for key, value in state.items():
+            new_key = key
+            for old, new in replacements:
+                new_key = new_key.replace(old, new)
+            normalized[new_key] = value
+        return normalized
+
     checkpoint = Path(str(checkpoint)).expanduser()
     if checkpoint.exists():
         if checkpoint.is_dir():
@@ -54,8 +80,11 @@ def initialize_visual_encoder_from_checkpoint(
                 f"checkpoint contains no parameters for {name}"
             )
 
+        encoder_state = normalize_vit_encoder_keys(
+            component_state("encoder")
+        )
         model.encoder.load_state_dict(
-            component_state("encoder"),
+            encoder_state,
             strict=bool(strict),
         )
         if load_projector:
@@ -96,7 +125,14 @@ def flow_jepa_forward(self, batch, stage, cfg):
     ctx_emb = emb[:, :ctx_len]
     future_act = act_emb[:, ctx_len - 1 : ctx_len - 1 + n_preds]
     tgt_emb = emb[:, ctx_len : ctx_len + n_preds]
-    output["pred_loss"] = self.model.flow_loss(ctx_emb, future_act, tgt_emb)
+    if getattr(self.model, "objective", None) == "transition_flow_rollout2":
+        pred_losses = self.model.transition_flow_rollout2_loss(
+            emb[:, ctx_len - 1 : ctx_len + n_preds],
+            act_emb[:, ctx_len - 1 : ctx_len - 1 + n_preds],
+        )
+        output.update(pred_losses)
+    else:
+        output["pred_loss"] = self.model.flow_loss(ctx_emb, future_act, tgt_emb)
     sigreg_emb = emb.permute(1, 2, 0, 3).reshape(
         emb.size(1) * emb.size(2), emb.size(0), emb.size(3)
     )
@@ -122,11 +158,12 @@ def run(cfg):
     transforms = [get_img_preprocessor(source='pixels', target='pixels', img_size=cfg.img_size)]
     
     with open_dict(cfg):
-        for col in cfg.data.dataset.keys_to_load:
-            if col.startswith("pixels"):
-                continue
-            normalizer = get_column_normalizer(dataset, col, col)
-            transforms.append(normalizer)
+        if bool(cfg.get("normalization", {}).get("enabled", True)):
+            for col in cfg.data.dataset.keys_to_load:
+                if col.startswith("pixels"):
+                    continue
+                normalizer = get_column_normalizer(dataset, col, col)
+                transforms.append(normalizer)
 
         cfg.model.action_encoder.input_dim = (
             cfg.data.dataset.frameskip * dataset.get_dim("action")
@@ -224,11 +261,19 @@ def run(cfg):
     object_dump_callback = SaveCkptCallback(
         run_name=cfg.output_model_name, cfg=cfg.model, epoch_interval=1,
     )
+    callbacks = [object_dump_callback]
+    timing_cfg = cfg.get("timing", {})
+    if bool(timing_cfg.get("enabled", False)):
+        callbacks.append(
+            ThroughputProfilerCallback(
+                output_path=run_dir / timing_cfg.get("filename", "timing.csv"),
+                every_n_steps=timing_cfg.get("every_n_steps", 10),
+            )
+        )
 
     trainer = pl.Trainer(
         **cfg.trainer,
-        callbacks=[object_dump_callback],
-        num_sanity_val_steps=1,
+        callbacks=callbacks,
         logger=logger,
         enable_checkpointing=True,
     )

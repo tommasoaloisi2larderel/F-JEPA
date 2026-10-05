@@ -1,0 +1,36 @@
+defaults:
+  - fjepa
+  - _self_
+
+output_model_name: flow-jepa-pusht-paper
+
+# Paper Appendix A, Push-T: state-centered Gaussian source with causal
+# future-token self-attention.
+flow_matching:
+  source: noisy_current
+  source_noise_scale: 0.5
+
+pretrained_visual_encoder:
+  enabled: true
+  checkpoint: ${oc.env:STABLEWM_HOME}/checkpoints/lewm-pusht
+  load_projector: true
+  strict: true
+  freeze: true
+
+model:
+  predictor:
+    causal_self_attention: true
+    dropout: 0.0
+
+trainer:
+  max_epochs: 20
+
+loader:
+  batch_size: 128
+  num_workers: 6
+  persistent_workers: true
+  prefetch_factor: 2
+
+loss:
+  sigreg:
+    weight: 0.09

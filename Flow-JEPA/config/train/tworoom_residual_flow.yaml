@@ -1,0 +1,32 @@
+defaults:
+  - fjepa
+  - override /data: tworoom
+  - _self_
+
+output_model_name: flow-jepa-tworoom-residual-flow
+
+flow_matching:
+  source: noisy_current
+  source_noise_scale: 0.25
+
+model:
+  objective: residual_flow
+  residual_base_loss_weight: 1.0
+  predictor:
+    causal_self_attention: true
+    dropout: 0.0
+  base_predictor:
+    _target_: module.FlowTrajectoryPredictor
+    input_dim: ${embed_dim}
+    hidden_dim: ${embed_dim}
+    action_dim: ${embed_dim}
+    output_dim: ${embed_dim}
+    output_proj_hidden_dim: 768
+    causal_self_attention: true
+    depth: 6
+    heads: 16
+    mlp_dim: 2048
+    dim_head: 64
+    dropout: 0.0
+    emb_dropout: 0.0
+

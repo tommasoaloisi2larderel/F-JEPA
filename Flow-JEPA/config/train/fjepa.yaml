@@ -27,12 +27,17 @@ pretrained_visual_encoder:
   # Freezes parameters and keeps BatchNorm/dropout in evaluation mode.
   freeze: true
 
+normalization:
+  enabled: true
+
 trainer:
   max_epochs: 20
   devices: auto
   accelerator: gpu
   precision: bf16
   gradient_clip_val: 1.0
+  num_sanity_val_steps: 1
+  log_every_n_steps: 10
 
 loader:
   batch_size: 128
