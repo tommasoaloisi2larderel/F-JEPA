@@ -185,6 +185,17 @@ def run(cfg: DictConfig):
         model.requires_grad_(False)
         model.interpolate_pos_encoding = True
         model.set_flow_seed(cfg.flow_seed)
+        eval_noise_scale = cfg.get("eval_noise_scale", None)
+        if eval_noise_scale is not None and hasattr(model, "flow_source_noise_scale"):
+            model.flow_source_noise_scale = float(eval_noise_scale)
+            print(
+                "[eval] overriding "
+                f"model.flow_source_noise_scale={model.flow_source_noise_scale}"
+            )
+        crn_group = cfg.get("crn_group", None)
+        if crn_group is not None:
+            model.eval_crn_group = crn_group
+            print(f"[eval] using crn_group={crn_group}")
         plan_config = swm.PlanConfig(**cfg.plan_config)
         solver = hydra.utils.instantiate(cfg.solver, model=model)
         policy = swm.policy.WorldModelPolicy(

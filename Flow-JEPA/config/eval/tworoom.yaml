@@ -10,6 +10,8 @@ world:
 
 seed: 42
 flow_seed: ${seed}
+eval_noise_scale: null
+crn_group: null
 policy: random # ckpt name or random
 
 perturbation:

@@ -372,13 +372,16 @@ class JEPA(nn.Module):
             target.reshape(b * n, 1, k, d),
         )
 
+        zero = torch.zeros_like(emb[:, :1])
         z1_hat = self._predict_transition(
             emb[:, :1],
             act_emb[:, :1],
+            noise=zero,
         )
         z2_hat = self._predict_transition(
             z1_hat,
             act_emb[:, 1:2],
+            noise=zero,
         )
         rollout_loss = F.mse_loss(z2_hat, emb[:, 2:3])
         total = local_loss + self.rollout_loss_weight * rollout_loss
@@ -452,9 +455,13 @@ class JEPA(nn.Module):
             current = hist_emb[:, -1:]
             preds = []
             for step in range(future_len):
+                step_noise = None
+                if noise is not None:
+                    step_noise = noise[:, step : step + 1]
                 current = self._predict_transition(
                     current,
                     future_act_emb[:, step : step + 1],
+                    noise=step_noise,
                 )
                 preds.append(current)
             return torch.cat(preds, dim=1)
@@ -524,7 +531,23 @@ class JEPA(nn.Module):
         act = rearrange(action_sequence, "b s ... -> (b s) ...")
         act_emb = self.action_encoder(act)
         emb_trunc = emb[:, -history_size:]
-        pred_emb = self.predict(emb_trunc, act_emb, horizon=horizon)
+        noise = None
+        crn_group = getattr(self, "eval_crn_group", None)
+        if crn_group in {True, "candidates", "candidate", "cem_candidates"}:
+            generator = self._get_flow_generator(emb.device)
+            base_noise = torch.randn(
+                B,
+                1,
+                horizon,
+                emb.size(-2),
+                emb.size(-1),
+                device=emb.device,
+                dtype=emb.dtype,
+                generator=generator,
+            )
+            noise = base_noise.expand(-1, S, -1, -1, -1)
+            noise = rearrange(noise, "b s h k d -> (b s) h k d").clone()
+        pred_emb = self.predict(emb_trunc, act_emb, horizon=horizon, noise=noise)
         pred_rollout = rearrange(
             pred_emb, "(b s) ... -> b s ...", b=B, s=S
         )

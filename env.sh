@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 export FJEPA_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-export STABLEWM_HOME="$FJEPA_HOME/stable-wm"
+export STABLEWM_HOME="${STABLEWM_HOME:-$FJEPA_HOME/stable-wm}"
 export LOCAL_DATASET_DIR="$STABLEWM_HOME"
 export UV_CACHE_DIR="$FJEPA_HOME/.uv-cache"
 export UV_PYTHON_INSTALL_DIR="$FJEPA_HOME/.uv-python"
